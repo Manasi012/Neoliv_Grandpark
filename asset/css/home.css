@@ -1,0 +1,193 @@
+.main-image1 {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.main-image1:after {
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+.single-items:before {
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.parallax-bottom-light {
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    top: unset;
+    background: #f9f6ed;
+    text-align: center;
+    font-weight: 600;
+    color: #000;
+    font-size: .65rem;
+    line-height: 20px;
+    display: inline-block;
+    padding: 5px 15px;
+    z-index: 2;
+}
+
+.tag-image-top-dark {
+    position: absolute;
+    background: #6b4637;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    font-size: .65rem;
+    line-height: 20px;
+    display: inline-block;
+    padding: 5px 10px;
+    z-index: 2;
+}
+
+.parallax-top-dark {
+    position: absolute;
+    background: #4a5c47;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    font-size: .65rem;
+    line-height: 20px;
+    display: inline-block;
+    padding: 5px 15px;
+    z-index: 2;
+    top: 0;
+}
+
+.tag-image-top-light {
+    position: absolute;
+    background: #f9f6ed;
+    text-align: center;
+    font-weight: 600;
+    color: #000;
+    font-size: .65rem;
+    line-height: 22px;
+    display: inline-block;
+    padding: 5px 10px;
+    z-index: 2;
+}
+
+.parallax-top-light {
+    position: absolute;
+    background: #f9f6ed;
+    text-align: center;
+    font-weight: 600;
+    color: #000;
+    font-size: .65rem;
+    line-height: 20px;
+    display: inline-block;
+    padding: 5px 15px;
+    z-index: 2;
+    top: 0;
+}
+
+.title-2 h2 span {
+    font-size: 50px;
+}
+
+.home-menu-tag {
+    background: #4a5c47;
+    color: #fff
+}
+
+.scroll-down1 {
+    color: #ffffff !important;
+    text-align: center;
+    font-size: 17px
+}
+
+@media screen and (max-width: 991px) {
+    .main-image {
+        height: 80vh;
+    }
+    .main-image1 {
+        height: 80vh;
+    }
+    .footer-menu-top {
+        padding-bottom: 7.5rem;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .main-image {
+        height: 80vh;
+    }
+    .main-image1 {
+        height: 50vh;
+        background-position: 75%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .main-image {
+        height: 60vh;
+    }
+    .main-image1 {
+        height: 400px;
+        background-position: 55%;
+    }
+    .company-about {
+        font-size: 16px;
+    }
+    .title-2 h2 span {
+        font-size: 40px;
+    }
+    .parallax-bottom-light {
+        font-size: .55rem;
+        line-height: 12px;
+        padding: 5px 8px;
+    }
+    .parallax-top-light {
+        font-size: .55rem;
+        line-height: 12px;
+        padding: 5px 8px;
+        left: 0;
+    }
+    .parallax-top-dark {
+        font-size: .55rem;
+        line-height: 12px;
+        padding: 5px 8px;
+    }
+    .single-items {
+        height: 100vh;
+    }
+    .area-heading {
+        padding-top: 200px;
+        padding-bottom: 220px;
+    }
+    .footer-top-section {
+        padding-top: 1.7rem;
+    }
+    .content .title-pad-bot1 {
+        margin-bottom: 3.5rem;
+    }
+    .home-menu-tag {
+        background: #293227;
+        color: #fff;
+        font-size: .55rem;
+        line-height: 12px;
+        padding: 5px 8px;
+    }
+    .scroll-down1 {
+        text-align: center;
+        font-size: 14px
+    }
+}
