@@ -703,6 +703,7 @@ header a.logo img {
     z-index: 99;
     overflow: hidden;
     height: 90px;
+    background: #ffffff42;
     width: 100%;
     -webkit-transition: all .1s ease;
     -moz-transition: all .1s ease;
@@ -729,7 +730,7 @@ header a.logo img {
 }
 
 .header-appear .navbar-top-default {
-    height: 70px;
+    height: 90px;
     position: fixed;
     z-index: 999;
     background: #074576;
@@ -3710,7 +3711,7 @@ ul.count_down.white li p:nth-child(2) {
 }
 
 .loader span {
-    background: #293227;
+    background: #074576;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     display: block;
