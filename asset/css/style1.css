@@ -315,6 +315,14 @@ a {
 
 .bg-lightmixed {
     background-color: #f9f6ed !important;
+
+}
+.bg-lightmixed1 {
+    background-color: #F4F6F8 !important;
+    /* background-image: url('../latestImages/dot_bg.png');
+    background-repeat: no-repeat !important;
+    height: auto;
+    background-size: cover; */
 }
 
 .gradient-bg1 {
@@ -705,7 +713,7 @@ header a.logo img {
     z-index: 99;
     overflow: hidden;
     height: 90px;
-    background: #074576;
+    background: transparent;
     width: 100%;
     -webkit-transition: all .1s ease;
     -moz-transition: all .1s ease;
@@ -1552,18 +1560,17 @@ header .center-logo a.logo img {
 ====================================== */
 
 .title {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .title h2 {
-    /*font-size: 3rem;
-    line-height: 1.2;
-    font-weight: 500;*/
-    font-size: 65px;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    /* font-size: 65px;
     font-style: normal;
     font-weight: 600;
     line-height: 1.3em !important;
-    margin-bottom: 10px;
+    margin-bottom: 10px; */
 }
 
 .title h2 span {
@@ -1603,6 +1610,12 @@ header .center-logo a.logo img {
 }
 .text_left{
     text-align: left !important;
+
+}
+.text_left1{
+    text-align: left !important;
+    padding-left: 1rem !important;
+    
 }
 .title p {
     max-width: 720px;
@@ -4752,4 +4765,19 @@ ul.count_down.white li p:nth-child(2) {
 .menu-subcontent {
     font-size: 20px;
     text-transform: capitalize;
+}
+
+@media screen and (min-width:1440px) {
+    .new_logo img {
+        margin-left: 32%;
+        width: 72%;
+        padding: 2.5rem !important;
+    }
+}
+.modal-content{
+    margin-top: 14%;
+}
+
+.right_modal .modal-content{
+    margin-top: 0%;
 }

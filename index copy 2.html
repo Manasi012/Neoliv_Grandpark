@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>NeoLiv Grandpark</title>
+
+    <link rel="icon" href="https://neoliv.in/favicon.ico" />
+    <link rel="stylesheet" href="./asset/css/animate.min.css" />
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <link rel="stylesheet" href="./asset/css/owl.carousel.min.css" /> -->
+    <!-- <link rel="stylesheet" href="./asset/css/owl.theme.default.min.css" /> -->
+    <!-- <link rel="stylesheet" href="./asset/css/cubeportfolio.min.css" /> -->
+    <link rel="stylesheet" href="./asset/css/jquery.fancybox.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="./asset/rs-plugin/css/settings.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./asset/rs-plugin/css/navigation.css"
+    />
+    <link rel="stylesheet" href="./asset/css/custom-style.css" />
+    <link rel="stylesheet" href="./asset/css/style1.css" />
+    <link rel="stylesheet" href="./asset/css/home.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+      html {
+        scroll-behavior: smooth;
+      }
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      .side-nav .navbar-nav .nav-link,
+      .btn {
+        font-family: "Montserrat" !important;
+      }
+
+      #madeWithCare {
+        scroll-behavior: smooth;
+      }
+
+      #madeWithCare1 {
+        scroll-behavior: smooth;
+      }
+
+      #popup_this {
+        top: 50%;
+        left: 10%;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: -50px;
+        position: fixed;
+        background: #fff;
+        padding: 30px;
+        z-index: 1000;
+        display: none;
+      }
+      .mob {
+        display: none;
+      }
+      .b-close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        color: #fff;
+        background: #4a5c47;
+        padding: 5px 10px;
+      }
+
+      .form-select {
+        height: 44px;
+        color: #605f5f;
+        border: none;
+        border-radius: 0rem;
+      }
+
+      .imgStyle:hover {
+        animation: rotate 3s linear;
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .fancybox-button--share {
+        display: none;
+      }
+
+      .banner-text {
+        padding-top: 20%;
+      }
+
+      .banner-mobile {
+        display: none;
+      }
+
+      .mobile-nav {
+        display: none;
+      }
+
+      .mobile-view {
+        display: none;
+      }
+
+      .sitevist-section {
+        background: url(./asset/images/request-bg.webp);
+        padding: 4.5rem 0;
+      }
+
+      .fancybox-button--fullscreen {
+        display: none;
+      }
+      .logo-scroll {
+  display: none;
+}
+
+.scrolled .logo-default {
+  display: none;
+}
+
+.scrolled .logo-scroll {
+  display: inline-block;
+}
+
+
+      @media screen and (max-width: 991px) {
+        .banner-desktop {
+          display: none;
+        }
+        .banner-mobile {
+          display: block;
+        }
+        .desktop-nav {
+          display: none;
+        }
+        .mobile-nav {
+          display: block;
+        }
+        .modal.left_modal .modal-dialog,
+        .modal.right_modal .modal-dialog {
+          max-width: 100%;
+        }
+      }
+
+      @media screen and (max-width: 576px) {
+        .desk {
+          display: none;
+        }
+        .mob {
+          display: block !important;
+        }
+        .desktop-view {
+          display: none;
+        }
+        .mobile-view {
+          display: block;
+        }
+        .banner-text {
+          padding-top: 60%;
+        }
+        .dark-slider h2 {
+          font-size: 2rem !important;
+        }
+        .dark-slider p {
+          font-size: 16px !important;
+          padding: 0px 20px;
+        }
+        .side-menu {
+          width: 100%;
+        }
+        .header-appear .navbar-top-default {
+          padding-top: 15px;
+        }
+        .header-right p {
+          padding-top: 7px;
+        }
+        .sitevist-section {
+          background: #f9f6ed;
+          padding: 0rem 0;
+        }
+        .area-heading {
+          padding-top: 40px;
+          padding-bottom: 40px;
+        }
+        .new_logo img {
+          margin-left: 0% !important;
+          width: 50% !important;
+          left: 0;
+          top: 4px;
+          position: absolute;
+        }
+        .header-button {
+          display: none !important;
+        }
+      }
+
+      /* mansi */
+      .new_logo img {
+        margin-left: 46%;
+        width: 51%;
+}
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="90">
+    <!--Loader Start -->
+    <div class="loader">
+      <div class="loader-inner">
+        <div class="loader-blocks">
+          <span class="block-1"></span>
+          <span class="block-2"></span>
+          <span class="block-3"></span>
+          <span class="block-4"></span>
+          <span class="block-5"></span>
+          <span class="block-6"></span>
+          <span class="block-7"></span>
+          <span class="block-8"></span>
+        </div>
+      </div>
+    </div>
+    <!--Loader End-->
+
+    <header>
+      <nav
+        class="navbar navbar-top-default center-logo navbar-expand-lg navbar-simple nav-box-round desktop-nav"
+      >
+        <div class="container">
+          <div class="col-md-2 col-sm-3 header-left">
+            <a
+              href="javascript:void(0)"
+              class="header-menu-icon"
+              id="sidemenu_toggle"
+            >
+              <i class="fa fa-bars"></i> MENU
+            </a>
+          </div>
+
+          <div class="col-md-4 col-sm-6 header-logo">
+            <a href="#" class="new_logo">
+              <img src="./asset/latestImages/logo white-01.png" alt="blue Logo" class="logo-default" />
+              <img src="./asset/latestImages/logo white-01.png" alt="white Logo" class="logo-scroll" />
+            </a>
+            
+            
+          </div>
+
+          <div class="col-md-4 col-sm-3 header-right">
+            <p class="header-button">
+              <a
+                href="#"
+                class="header-request"
+                id="modal_view_right"
+                data-bs-toggle="modal"
+                data-bs-target="#information_modal"
+              >
+                BOOK A VISIT</a
+              >
+            </p>
+          </div>
+        </div>
+      </nav>
+
+      <nav
+        class="navbar navbar-top-default center-logo navbar-expand-lg navbar-simple nav-box-round mobile-nav"
+      >
+        <div class="container">
+          <div class="col-md-4 col-sm-6 header-logo">
+            <a href="#" class="new_logo">
+              <img src="./asset/latestImages/logo white-01.png" alt="blue Logo" class="logo-default" />
+              <img src="./asset/latestImages/logo white-01.png" alt="white Logo" class="logo-scroll" />
+            </a>
+            
+          </div>
+
+          <div class="col-md-2 col-sm-3 header-left">
+            <a
+              href="javascript:void(0)"
+              class="header-menu-icon"
+              id="sidemenu_toggle1"
+            >
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-sm-3 header-right">
+            <p class="header-button">
+              <a
+                href="#"
+                class="header-request"
+                id="modal_view_right"
+                data-bs-toggle="modal"
+                data-bs-target="#information_modal"
+                ><i class="fa fa-handshake-o"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      </nav>
+      <!--Navigation-->
+
+      <div class="side-menu">
+        <div class="inner-wrapper">
+          <span class="btn-close" id="btn_sideNavClose"><i></i><i></i></span>
+
+          <nav class="side-nav w-100">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#overview">Overview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#location">Location</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#amenities">Amenities</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#payment">Price & Payment Plan </a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#master">Master Plan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tel:+91999999999">+91 9999999999</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="side-footer w-100">
+            <ul class="social-icons-simple">
+              <li>
+                <a class="youtube-text-hvr" href="" target="_blank"
+                  ><i class="fa fa-youtube-play"></i>
+                </a>
+              </li>
+              <li>&nbsp;</li>
+              <li>
+                <a
+                  class="document-text-hvr"
+                  href="./asset/Sonipat_Brochure.pdf"
+                  target="_blank"
+                  ><i class="fa fa-book"></i>
+                </a>
+              </li>
+            </ul>
+            <p style="font-size: 15px; text-wrap: auto">
+              RERA REGISTRATION NO.:<br />
+              RC/REP/HARERA/GGM/696/428/2023/40<br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <a id="close_side_menu" href="javascript:void(0);"></a>
+    </header>
+    <!--Header end-->
+
+    <!--slider-->
+    <section id="home" class=" position-relative text-white desk" 
+    style="height: 100vh; overflow: hidden; background: url('./asset/latestImages/Desktopbanner.jpg') no-repeat center center/cover;">
+
+      <!-- <div class="hero-section1  position-absolute top-50 start-50 translate-middle text-center px-3" style="z-index: 2;">
+        <h1 class="display-4 fw-bold mb-4">NEOLIV SONIPAT</h1>
+        <p class="lead mb-4 text-white fw-bold">
+          WHERE NATURE BEGINS THE CONVERSATION.
+        </p>
+      </div>
+
+      <div class="position-absolute bottom-0 start-50 translate-middle-x mb-4 text-center" style="z-index: 2;">
+        <a href="#overview" class="discover-more-link text-white text-decoration-none fw-semibold d-inline-block">
+          DISCOVER MORE <br />↓
+        </a>
+      </div> -->
+    
+
+    </section>
+    
+    
+    
+    
+
+    <section
+  id="home"
+  class="position-relative text-white mob hero-section1 "
+  style="height: 100vh; overflow: hidden; margin-top: -14px; background-image: url('./asset/latestImages/MobileBanner.jpg'); background-size: cover; background-position: center;"
+>
+
+</section>
+
+
+    <section class="bg-lightmixed section-padding-bottom" id="overview">
+      <div class="container">
+        <!--Heading-->
+        <div class="row">
+          <div
+            class="col-md-12 text-center aos-item"
+            data-aos="fade-up"
+            data-aos-duration="2500"
+          >
+            <div class="title d-inline-block">
+              <h2 class="third-color mb-3">
+                YOUR GRAND LIFE IS HERE 
+                <!-- <span>life</span> -->
+              </h2>
+              <p class="italic">
+                Tucked within an urban forest,
+                life flows slower, deeper, greener.
+                It’s where luxury breathes easy,
+                and every day feels quietly elevated.
+                
+              </p>
+            </div>
+            <!-- <div class="title text-center title-2">
+              <h2 class="third-color mb-3">
+                <span
+                  ><img
+                    src="https://magicpage-dev.propstory.com/ImageUploads/VBHC%20Landscape/1nnx57g9rm9gqkael.png"
+                    class="NL_logo"
+                    alt=""
+                /></span>
+              </h2>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- <section
+      class="section-3 bg-lightmixed banner-mobile"
+      style="overflow: hidden"
+    >
+      <div class="row">
+        <div class="col-md-12">
+          <span class="parallax-top-light">Lifestyle Image</span>
+          <img
+            src="./asset/latestImages/2.jpg"
+            alt="location-image"
+            style="width: 100%; height: auto; background-attachment: fixed"
+          />
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <section
+      class="main-image1 single-items parallax banner-desktop"
+      style="
+        background-image: url(./asset/latestImages/2.jpg);
+        background-attachment: fixed;
+      "
+    >
+      <div class="row">
+        <div class="col-md-12">
+          <span class="parallax-top-light">Lifestyle Image</span>
+        </div>      </div>
+    </section> -->
+
+
+
+    <section
+    class="section-3 bg-lightmixed banner-mobile"
+    style="position: relative; overflow: hidden; padding: 100px 0; background-image: url('./asset/latestImages/5.jpg'); background-size: cover; background-position: center;"
+  >
+    <!-- Dark overlay -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1;"></div>
+  
+    <!-- Content -->
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="row justify-content-center">
+        <div class="col-md-12 text-center text-white">
+          <div class="title d-inline-block text-white">
+            <h2 class="third-color mb-3 text-white">
+              A SOCIAL ZONE <br />LIKE NO OTHER
+            </h2>
+            <p class="mb-3 text-white">
+              30,000 sq. ft. to gather, move, unwind, and indulge.
+            </p>
+            <p class="mb-3 text-white">Curated for everything from quiet mornings to spirited evenings.</p>
+            <div style="margin-top: 40px">
+              <a
+                data-fancybox="group-two"
+                href="https://d3aw1acw0qsnfa.cloudfront.net/images/master-plan-new.jpg"
+                id="masterplan"
+                class="btn btn-large btn-gradient1 btn-rounded"
+                >EXPLORE THE MASTERPLAN</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+    <section
+    class="main-image1 single-items parallax banner-desktop"
+    style="background-image: url(./asset/latestImages/5.jpg); position: relative; background-size: cover; background-position: center; padding: 150px 0;"
+  >
+    <!-- Overlay -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1;"></div>
+  
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="row justify-content-center">
+        <div class="col-md-10 text-center">
+          <div class="title d-inline-block text-white">
+            <h2 class="third-color mb-3 text-white">
+              A SOCIAL ZONE <br />LIKE NO OTHER
+            </h2>
+            <p class="mb-3 text-white">
+              30,000 sq. ft. to gather, move, unwind, and indulge.
+            </p>
+            <p class="mb-3 text-white">Curated for everything from quiet mornings to spirited evenings.</p>
+            <div style="margin-top: 70px">
+              <a
+                data-fancybox="group-two"
+                href="https://d3aw1acw0qsnfa.cloudfront.net/images/master-plan-new.jpg"
+                id="masterplan"
+                class="btn btn-large btn-gradient1 btn-rounded"
+                >EXPLORE THE MASTERPLAN</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+    <section class="bg-lightmixed section-padding-bottom">
+      <div class="container">
+        <!--Heading-->
+        <div class="row">
+          <div
+            class="col-md-12 text-center aos-item"
+            data-aos="fade-up"
+            data-aos-duration="2500"
+          >
+            <div class="title d-inline-block">
+              <h2 class="third-color mb-3">
+                AN URBAN FOREST <br />UNLIKE ANY OTHER 
+                <!-- <span>unlike</span> -->
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row title">
+          <div class="col-lg-6">
+            <p class="text_left">
+              Wander shaded trails,<br>
+pause by the stream,<br>
+and breathe in silence wrapped in green.
+This isn’t just greenery, it’s nature herself. 
+Thoughtfully reimagined at your doorstep
+
+            </p>
+            <!-- <ul
+              class="list-unstyled mt-4 mb-5 titleclass"
+              style="
+                font-size: 1.15rem;
+                color: #444;
+                line-height: 2;
+                font-weight: 400;
+              "
+            >
+              <li>🌿 Sway in the rhythm of tall trees.</li>
+              <li>🌳 Cocoon within the comfort of green canopies.</li>
+              <li>🌱 Laze in the vast open greens.</li>
+              <li>✨ Celebrate always.</li>
+              <li>🌌 Under the stars and under the shade.</li>
+              <li>☀️ Soak in the sun and the water.</li>
+              <li>🎶 Immerse in nature’s music, to the chirp of birds.</li>
+            </ul> -->
+            <p>
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#information_modal"
+                class="btn btn-gradient btn-rounded px-5 py-2"
+                style="
+                  font-size: 1rem;
+                  font-weight: 500;
+                  font-style: normal;
+                  border-radius: 30px;
+                  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+                  transition: all 0.3s;
+                  margin: 0 0 20px 0;
+                "
+              >
+                DISCOVER MORE
+              </a>
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="./asset/latestImages/9.jpg"
+              alt="Urban Forest"
+              class="img-fluid rounded-4 shadow"
+              style="max-height: 500px; object-fit: cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+    class="main-image1 single-items parallax banner-desktop"
+    style="background-image: url('./asset/latestImages/3.jpg'); background-size: cover; background-position: center; padding: 150px 0; position: relative;"
+  >
+    <!-- Dark Overlay -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1;"></div>
+  
+    <!-- Content -->
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="row">
+        <div class="col-md-12 text-center text-white">
+          <!-- <span class="parallax-top-light">Lifestyle Image</span> -->
+          <div class="title d-inline-block">
+            <h2 class="third-color mb-3 text-white desktop-view">
+              ALL THE SPACE <br />TO JUST BE
+            </h2>
+            <p class="text-white">
+              A home where children chase butterflies, not WiFi.<br>
+              Where mornings stretch wide,<br> and life flows slow, in endlessly green grandeur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section
+  class="section-3 bg-lightmixed banner-mobile"
+  style="position: relative; overflow: hidden; padding: 100px 0; background-image: url('./asset/latestImages/3.jpg'); background-size: cover; background-position: center;"
+>
+  <!-- Dark Overlay -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1;"></div>
+
+  <!-- Content -->
+  <div class="container" style="position: relative; z-index: 2;">
+    <div class="row">
+      <div class="col-md-12 text-center text-white">
+        <!-- <span class="parallax-top-light">Lifestyle Image</span> -->
+
+        <div class="title d-inline-block">
+          <h2 class="third-color text-white mobile-view" style="line-height: 1.1; margin-bottom: 0px">
+            ALL THE SPACE TO
+          </h2>
+          <h2 class="third-color mb-3 text-white mobile-view" style="margin-top: 5px">
+            JUST BE
+          </h2>
+          <p class="text-white">
+            A home where children chase butterflies, not WiFi.
+            Where mornings stretch wide, and life flows slow, in endlessly green grandeur.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- <section
+      class="section-3 bg-lightmixed banner-mobile"
+      style="overflow: hidden"
+    >
+      <div class="row">
+        <div class="col-md-12">
+          <span
+            class="parallax-top-light"
+            style="background: #4a5c47; color: #fff"
+            >Actual Photo</span
+          >
+          <img
+            src="./asset/latestImages/1.jpg"
+            alt="location-image"
+            style="width: 100%; height: auto"
+          />
+        </div>
+      </div>
+    </section>
+    <section
+      class="main-image1 single-items parallax banner-desktop"
+      style="background-image: url(./asset/latestImages/1.jpg)"
+    >
+      <div class="row">
+        <div class="col-md-12">
+          <span
+            class="parallax-top-light"
+            style="background: #4a5c47; color: #fff"
+            >Actual Photo</span
+          >
+        </div>
+      </div>
+    </section> -->
+
+    <section class="bg-lightmixed section-padding-bottom" id="amenities">
+      <div class="container">
+        <!--Heading-->
+        <div class="row">
+          <div
+            class="col-md-12 text-center aos-item"
+            data-aos="fade-up"
+            data-aos-duration="2500"
+          >
+            <div class="title d-inline-block">
+              <h2 class="third-color mb-3 desktop-view">
+                SPACES BUILT <br />TO CARE FOR YOU
+                <!-- <span>to </span> -->
+              </h2>
+              <h2 class="third-color mb-3 mobile-view">
+                SPACES <br />BUILT TO<br />
+                CARE FOR YOU
+              </h2>
+              <!-- <span style="padding-left: 10px">to </span
+                > -->
+            </div>
+          </div>
+        </div>
+        <div class="row title">
+          <div class="col-lg-5">
+        <p class="text_left">
+          A gym that energises,<br>
+A restaurant that delights,<br>
+Playrooms that spark joy,<br>
+Terraces that breathe,<br>
+A pool that calms.
+
+        </p>
+        <p class="text_left">At NeoLiv Grand Park, every space is thoughtfully designed.
+          For movement, moments, and everything in between.
+          </p>
+
+            <p style="margin: 70px 0">
+              <a class="btn btn-large btn-gradient btn-rounded" data-bs-toggle="modal" data-bs-target="#information_modal">DISCOVER MORE</a>
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <img
+              src="./asset/latestImages/Amenities.jpg"
+              alt="amenities"
+              class="img-fluid rounded-4 shadow"
+              style="max-height: 500px; object-fit: cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-0 bg-lightmixed section-padding-bottom" id="gallery">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-md-12 text-center aos-item"
+        data-aos="fade-up"
+        data-aos-duration="2500"
+      >
+        <div class="title d-inline-block">
+          <h2 class="third-color mb-3">
+             A GLIMPSE INTO YOUR GRAND LIFE 
+             <!-- <span> Our</span> -->
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-md-4 mb-4">
+        <a href="./asset/latestImages/18.jpg" data-lightbox="gallery" data-title="Image 1">
+          <div class="hover-gallery">
+            <img src="./asset/latestImages/18.jpg" class="img-fluid rounded shadow" alt="Gallery Image 1">
+            <div class="overlay">View</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <a href="./asset/latestImages/9.jpg" data-lightbox="gallery" data-title="Image 2">
+          <div class="hover-gallery">
+            <img src="./asset/latestImages/9.jpg" class="img-fluid rounded shadow" alt="Gallery Image 2">
+            <div class="overlay">View</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <a href="./asset/latestImages/2.jpg" data-lightbox="gallery" data-title="Image 3">
+          <div class="hover-gallery">
+            <img src="./asset/latestImages/2.jpg" class="img-fluid rounded shadow" alt="Gallery Image 3">
+            <div class="overlay">View</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <a href="./asset/latestImages/8.jpg" data-lightbox="gallery" data-title="Image 4">
+          <div class="hover-gallery">
+            <img src="./asset/latestImages/8.jpg" class="img-fluid rounded shadow" alt="Gallery Image 4">
+            <div class="overlay">View</div>
+          </div>
+        </a>
+      </div>
+
+    
+
+      <div class="col-md-4 mb-4">
+        <a href="./asset/latestImages/6.jpg" data-lightbox="gallery" data-title="Image 2">
+          <div class="hover-gallery">
+            <img src="./asset/latestImages/6.jpg" class="img-fluid rounded shadow" alt="Gallery Image 2">
+            <div class="overlay">View</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <a href="./asset/latestImages/3.jpg" data-lightbox="gallery" data-title="Image 4">
+          <div class="hover-gallery">
+            <img src="./asset/latestImages/3.jpg" class="img-fluid rounded shadow" alt="Gallery Image 4">
+            <div class="overlay">View</div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    
+    <!-- <section
+      class="main-image1 single-items parallax banner-desktop"
+      style="background-image: url(./asset/latestImages/18.jpg)"
+    >
+      <div class="row">
+        <div class="col-md-12">
+          <span class="parallax-top-light">Lifestyle Image</span>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <section
+      class="sitevist-section py-5"
+      id="site-visit"
+      style="background: #fdf9f2"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div
+            class="col-md-7 col-sm-10 p-5 rounded-4 shadow"
+            style="background: #fff; border: 1px solid #f1e7d0"
+          >
+            <div class="text-center mb-4">
+              <h2
+                class="mb-0 aos-item"
+                data-aos="fade-up"
+                data-aos-duration="2500"
+                style="
+                  font-family: 'Playfair Display', serif;
+                  font-size: 36px;
+                  color: #2c2c2c;
+                "
+              >
+                Request Site Visit
+              </h2>
+            </div>
+
+   
+            <form class="contact-form  aos-item"
+            data-aos="zoom-in"
+            data-aos-duration="2500">
+              <div class="row g-3">
+                <div class="col-12">
+                  <input
+                    type="text"
+                    class="form-control luxury-input"
+                    id="first_name"
+                    name="first_name"
+                    placeholder="👤 First Name"
+                  />
+                </div>
+
+                <div class="col-12">
+                  <input
+                    type="email"
+                    class="form-control luxury-input"
+                    id="email"
+                    name="email"
+                    placeholder="✉️ Email Address"
+                  />
+                </div>
+
+                <div class="col-12">
+                  <input
+                    type="text"
+                    class="form-control luxury-input"
+                    id="phone"
+                    name="phone"
+                    placeholder="📞 Phone Number"
+                  />
+                </div>
+
+                <div class="col-12 text-center mt-4">
+                  <button type="submit" class="btn luxury-btn px-5 py-2">
+                    Submit Request
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="content bg-greenmixed footer-top-section" id="location">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-12 text-center aos-item"
+            data-aos="fade-up"
+            data-aos-duration="2500"
+          >
+            <div class="title d-inline-block">
+              <h2 class="third-color mb-3">
+                  THE LOCATION
+                 <!-- <span> Our</span> -->
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-lg-6 aos-item"
+            data-aos="zoom-in"
+            data-aos-duration="2500"
+          >
+            <div class="title title-pad-bot title-pad-bot1 p-0">
+              <div class="footer-left mt-0">
+                <p>
+                  Placed in Sector 70 at Kundli-Sonipat, just minutes from Delhi. Well-connected by highways, expressways, and UER-II. Poised for tomorrow,yet grounded in calm. Close to it all, yet worlds away.
+
+                </pc>
+                <p style="text-align: left">
+                  Sector -70, Kundli, Sonipat, Haryana 131001
+                </p>
+
+                <!-- <a>
+                  <img
+                    src="./asset/latestImages/discover-web.svg"
+                    alt="discover-logo"
+                    class="imgStyle"
+                  />
+                  <img
+                    src="./asset/latestImages/discoverArrow.svg"
+                    alt="discover-logo"
+                    class="footer-arrow"
+                    style="filter: invert(1)"
+                  />
+                </a> -->
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 aos-item"
+            data-aos="zoom-in"
+            data-aos-duration="2500"
+          >
+            <div class="footer-right">
+              <!-- <a href="./location" >
+                     <span class="tag-image-top-light home-menu-tag"  >Actual Photo</span>
+                    <img src="./asset/image/location-thumbnail.jpg" alt="image" class="section-img-cover">
+				</a>	 -->
+              <iframe title="Maplocation"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.731442902293!2d77.1482083!3d28.9113564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390daded024272cd%3A0x5e5071ffd5f4a626!2sNeoLiv%20Kundli%2C%20Sonipat!5e1!3m2!1sen!2sin!4v1742294480291!5m2!1sen!2sin"
+                width="100%"
+                height="350"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+          <!-- <hr /> -->
+        </div>
+      </div>
+    </section>
+
+    <!--Footer Start-->
+    <section
+      class="text-center footer-section"
+      style="background-color: #074576"
+    >
+      <h2 class="d-none">hidden</h2>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-2">
+            <img
+            src="./asset/latestImages/Royal-Green-Realty-logo.png"
+            class="NL_logo1"
+            alt=""
+          />
+           
+            
+          </div>
+          <div class="col-lg-8">
+            <div class="footer-link">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                >Privacy Policy
+              </a>
+              <span class="text-white">|</span>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal1"
+                >Terms & Conditions</a
+              >
+            </div>
+            <p class="company-about fadeIn">
+              RERA REGISTRATION NO.: RC/REP/HARERA/GGM/696/428/2023/40
+            </p>
+            <!-- <p class="footer-link-1"> <a href="https://haryanarera.gov.in/" target="_blank"  >www.haryanarera.gov.in</a></a></p> -->
+          </div>
+          <div class="col-lg-2">
+           
+            <img
+            src="./asset/latestImages/NeoLiv Logo Final-02.png"
+            class="NL_logo"
+            alt=""
+          />
+            
+          </div>
+         
+        </div>
+      </div>
+    </section>
+    <!--Footer End-->
+
+    <div id="mybutton">
+      <button href="#" class="feedback" id="modal_view_right" data-bs-toggle="modal" data-bs-target="#information_modal">
+        Enquire now
+      </button>
+    </div>
+
+    <div id="mybutton1">
+      <a
+      href="https://api.whatsapp.com/send?phone=919999999999&amp;text=Hi! I'm Interested In Mana Dale. Please share Details."
+      class="text-white"
+      target="_blank"
+    >
+    <button href="#" class="feedback1">
+      <i class="fa fa-whatsapp fs-5"></i>
+    </button> 
+      
+    </a>
+      <!-- <button href="#" class="feedback1" id="modal_view_right" data-bs-toggle="modal" data-bs-target="#information_modal">
+        Enquire now
+      </button> -->
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="modal-title" id="exampleModalLabel">PRIVACY POLICY</h5>
+
+            <p>
+              TRL Riceland Private Limited (“Company”) is committed to maintain
+              the privacy and accuracy of information that has been provided on
+              this website.
+            </p>
+            <p>
+              By using this website, you agree to the collection and use of
+              information in accordance with this Privacy Policy as may be
+              modified from time to time. Users are advised not to access this
+              site if they do not agree to this Privacy Policy. This website
+              does not constitute part of a legal contract.
+            </p>
+            <p>
+              This Privacy Policy covers the Company’s usage of personally
+              identifiable material that is shared by you on this website. This
+              Policy also covers treatment of any personally identifiable
+              information shared with the Company.
+            </p>
+            <p>
+              This Privacy Policy does not apply to the activities of
+              organizations not owned or controlled by the Company, or to people
+              who are not employed or managed by the Company and also in respect
+              of information required to be shared with public/private
+              authority(ies) by operation of any applicable law, court order or
+              direction.
+            </p>
+            <p><strong>Collection and Usage of Information</strong></p>
+
+            <ul>
+              <li>
+                We use your personal information only for providing and
+                improving the website
+              </li>
+              <li>
+                We compile personally identifiable information when you submit
+                any form on this website.
+              </li>
+              <li>
+                While using this website, we may ask you to provide us with
+                certain personally identifiable information that can be used to
+                contact or identify you. Personally identifiable information may
+                include but is not limited to your name, email address and
+                contact number.
+              </li>
+              <li>
+                Once a form is submitted and it reaches us, the information
+                provided by you is saved in our database and is not shared with
+                any third party.
+              </li>
+              <li>
+                We use this information to revert to your query and future
+                reference, and to contact you about products &amp; services.
+              </li>
+              <li>
+                Like many website operators, we collect information that your
+                browser sends whenever you visit our website. This log data may
+                include information such as your computer's internet protocol,
+                IP address, browser type, browser version, mobile device
+                information, location, network carrier, the pages of our website
+                that you visit, the time and date of your visit, the time spent
+                on those pages and other statistics.
+              </li>
+            </ul>
+
+            <p><strong>The following information is collected:</strong></p>
+
+            <ul>
+              <li>
+                Your personal information including but not limited to your
+                name, email address and contact number
+              </li>
+              <li>
+                A record of any interaction and correspondence between you and
+                the Company.
+              </li>
+              <li>
+                Your responses to customer surveys conducted by the Company or
+                on their behalf.
+              </li>
+              <li>
+                Details of your visits to this website and other information
+                collected through cookies and other tracking technology
+                including information that you look at.
+              </li>
+              <li>Online Identifiers.</li>
+            </ul>
+
+            <p><strong>Sharing and Disclosure of Information:</strong></p>
+
+            <ul>
+              <li>
+                We do not sell, rent, or share personally identifiable
+                information made available to the Company.
+              </li>
+              <li>
+                We share personally identifiable information to other companies
+                or people only if:
+                <ol>
+                  <li>
+                    We have consent to share the information; or we may disclose
+                    personal information if required to do so by law or in the
+                    good faith belief that such disclosure is reasonably
+                    necessary to respond to court orders/summons/directions, or
+                    other legal process.
+                  </li>
+                  <li>
+                    We may disclose personal information to law enforcement
+                    offices, third party rights owners, or others in the good
+                    faith belief that such disclosure is reasonably necessary
+                    to: enforce our Terms of Privacy Policy; respond to claims
+                    that an advertisement, posting, or other content violates
+                    the rights of a third party; or protect the rights, property
+                    or personal safety of our users or the general public.
+                  </li>
+                  <li>
+                    We find that your actions on our website violate our
+                    <a href="#">Terms and Conditions</a>.
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="modal-title" id="exampleModalLabel">
+              TERMS AND CONDITIONS
+            </h5>
+
+            <p>
+              The information contained in this website is for general
+              information purposes only. The information is provided by
+              <strong></strong>, a property of TRL Riceland Private Limited
+              (“Company”). The user is cautioned and advised not to rely upon
+              any information stated on any other websites which may appear to
+              be similar to the Company’s official website and/or contain
+              Company’s logo/brand name or information about the Company.
+            </p>
+            <p>
+              By using or accessing this website, the user agrees, acknowledges,
+              and accepts all the terms and conditions of this disclaimer
+              without any qualification or limitation.
+            </p>
+            <p>
+              Information contained on this website may be changed or updated at
+              any time without notice. To keep yourself updated on any changes
+              introduced, please keep visiting the website and reviewing the
+              terms and conditions.
+            </p>
+            <p>
+              Queries/feedback/etc. are not monitored on the website, therefore
+              shall not be construed as read or registered with Company or the
+              owner of the website. This website may contain other proprietary
+              notices and copyright information, the terms of which must be
+              observed and followed.
+            </p>
+            <p>
+              While we endeavour to keep the information up to date and correct,
+              we make no representations or warranties of any kind, express or
+              implied, about the completeness, accuracy, reliability,
+              suitability, or availability with respect to the website or the
+              information, products, services, or related graphics contained on
+              the website for any purpose. Any reliance you place on such
+              information is therefore strictly at your own risk.
+            </p>
+            <p>
+              Nothing on this website constitutes advertising, marketing,
+              booking, selling or an offer for sale, or invitation to purchase a
+              unit in the project in any manner by the Company. This website
+              does not constitute part of a legal contract. By visiting this
+              website, the user agrees that the information including brochures
+              and marketing collaterals on this website are solely for
+              informational purposes only and the user has not relied on this
+              information for making any booking/purchase a unit in the project
+              of the Company.
+            </p>
+            <p>
+              The content on this website, regarding the project and in respect
+              of the plots and/or building, project layout, area, amenities,
+              landscapes, other services, and other relevant terms, are based on
+              the approved and sanctioned plans subject to any modification and
+              change in consonance with relevant laws or as directed by the
+              authorities. The visuals, pictures, images/renderings/maps of the
+              project are purely indicative, informative, and representational
+              in nature and only an artistic impression, unless specifically
+              claimed to be actual photographs.
+            </p>
+            <p>
+              You are requested to independently, either directly or through
+              your legal/financial consultants, thoroughly verify all
+              details/documents pertaining to this project as available on
+              (bearing HRERA registration number
+              RC/REP/HARERA/GGM/696/428/2023/40) or at Company's office to
+              understand the documents and information in all respect prior to
+              concluding any decision for buying. The Company will not be
+              accepting any bookings or allotments solely based on the images,
+              material, stock photography, projections, details, and
+              descriptions that are currently available and/or displayed on this
+              website.
+            </p>
+            <p>
+              This website and all its contents are provided on"as is" and on"as
+              available" basis. No information given under this website creates
+              a warranty or expand the scope of any warranty that cannot be
+              disclaimed under applicable law. Your use of this website is
+              solely at your own risk. This website is for guidance only. It
+              does not constitute part of an offer or contract. The design &amp;
+              specifications are subject to change without prior notice. The
+              computer-generated images are the artistic impression and are an
+              indicative of the actual designs.
+            </p>
+            <p>
+              You agree to defend, indemnify, and hold harmless the Company and/
+              or its associate entities, their officers, directors, employees,
+              and agents, from and against any claims, actions or demands,
+              including without limitation reasonable legal and accounting fees,
+              alleging, or resulting from your use of the website or your breach
+              of these terms and conditions of this website. The Company
+              expressly disclaims all liability in respect to actions taken or
+              not taken based on any or all the contents of this website.
+            </p>
+            <p>
+              This website may contain links to other websites including those
+              operated and maintained by third parties. The Company includes
+              these links solely as a convenience to you, and the presence of
+              such a link does not imply a responsibility for the linked website
+              or an endorsement of the linked website, its operator, or its
+              contents. The Company makes no representations whatsoever about
+              any other website which you may access through this one. When you
+              access a non-Company website, even one that may contain the
+              Company-logo, please note that it is independent from the Company,
+              and that the Company has no control over the content on that
+              website. It is up to you to take precautions to ensure that
+              whatever you select for your use is free of such items as viruses,
+              worms, trojan horses and other items of a destructive nature.
+            </p>
+            <p>
+              In no event shall the Company be liable to any party for any
+              direct, indirect, special, or other consequential damages for any
+              use of this website, or any other hyperlinked website, including
+              without limitation, any lost profits, business interruption, loss
+              of programs or other data on your information handling system or
+              otherwise, even if we are expressly advised of the possibility of
+              such damages.
+            </p>
+            <p>
+              The foregoing are subject to the prevailing laws of India and RERA
+              authority and/or courts at Gurugram, Haryana and High Court of
+              Punjab and Haryana, India shall have the exclusive jurisdiction on
+              any dispute that may arise out of the use of this website.
+            </p>
+            <p>We thank you for your patience and understanding.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- left modal -->
+    <div
+      class="modal modal_outer right_modal fade"
+      id="information_modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel2"
+    >
+      <div class="modal-dialog" role="document">
+        <form method="post">
+          <div class="modal-content" style="padding-top: 2.5rem">
+            <div
+              class="modal-header"
+              style="border-bottom: none; display: flow; text-align: center"
+            >
+              <h2 class="modal-title" style="font-size: 2.4rem">
+                Book A Visit
+              </h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true"> </span>
+              </button>
+            </div>
+            <div
+              class="modal-body get_quote_view_modal_body"
+              style="border: none; text-align: left"
+            >
+              <form id="contact_form" name="contact_form" method="post">
+                <div class="mb-1">
+                  <label for="name_input"> First Name:</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="first_name"
+                    name="first_name"
+                  />
+                </div>
+                <div class="mb-1">
+                  <label for="email_addr"> Email:</label>
+                  <input
+                    class="form-control"
+                    type="email"
+                    id="email"
+                    name="email"
+                  />
+                </div>
+
+                <div class="mb-1">
+                  Phone:
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="phone"
+                    name="phone"
+                  />
+                </div>
+                <div class="mb-1 text-center">
+                  <button
+                    type="submit"
+                    class="btn btn-large btn-gradient btn-rounded mt-2"
+                  >
+                    <i
+                      class="fa fa-spinner fa-spin mr-2 d-none"
+                      aria-hidden="true"
+                    ></i>
+                    <span>SUBMIT</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- modal-content -->
+    </div>
+    <!-- modal-dialog -->
+
+    <!--Scroll Top-->
+    <a class="scroll-top-arrow" href="javascript:void(0);"
+      ><i class="fa fa-angle-up"></i
+    ></a>
+    <!--Scroll Top End-->
+
+    <div class="call-to-action1 d-flex">
+      <div class="col-4">
+        <a href="tel:+9999999999">
+          <p class="text-center"><i class="fa fa-phone" style="padding-right: 3px;"></i>Call Now</p>
+        </a>
+      </div>
+      <div
+        class="col-4 footer-right-call"
+        style="border-left: 1px solid #fff; border-right: 1px solid #fff"
+      >
+        <a
+          href="#"
+          id="modal_view_right"
+          data-bs-toggle="modal"
+          data-bs-target="#information_modal"
+        >
+          <p class="text-center"><i class="fa fa-file" style="padding-right: 3px;"></i>Enquire</p>
+        </a>
+      </div>
+      <div class="col-4 footer-right-call">
+        <a href="#">
+          <p class="text-center">
+            <a
+              href="https://api.whatsapp.com/send?phone=919999999999&amp;text=Hi! I'm Interested In Mana Dale. Please share Details."
+              class="text-white float"
+              target="_blank"
+            >
+              <i class="fa fa-whatsapp" style="padding-right: 3px;"></i>
+              WhatsApp
+            </a>
+          </p>
+        </a>
+      </div>
+    </div>
+    
+    <script src="./asset/js/jquery-3.3.1.min.js"></script>
+    <script src="./asset/js/popper.min.js"></script>
+    <script src="./asset/js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <script src="./asset/js/jquery.appear.js"></script>
+    <script src="./asset/js/isotope.pkgd.min.js"></script>
+    <!-- <script src="./asset/js/jquery.cubeportfolio.min.js"></script> -->
+    <!-- <script src="./asset/js/owl.carousel.min.js"></script> -->
+    <!-- <script src="./asset/js/morphext.min.js"></script> -->
+    <!-- <script src="./asset/js/particles.min.js"></script> -->
+    <script src="./asset/js/parallaxie.min.js"></script>
+    <script src="./asset/js/jquery.fancybox.min.js"></script>
+    <script src="./asset/js/wow.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <!-- <script src="./asset/rs-plugin/js/jquery.themepunch.tools.min.js"></script> -->
+    <!-- <script src="./asset/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> -->
+
+    <!-- SLIDER REVOLUTION EXTENSIONS -->
+    <!-- <script src="./asset/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="./asset/rs-plugin/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="./asset/rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="./asset/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="./asset/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="./asset/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="./asset/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="./asset/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="./asset/rs-plugin/js/extensions/revolution.extension.video.min.js"></script> -->
+    <!-- map -->
+
+    <!-- custom script -->
+    <script src="./asset/js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+<script>
+  window.addEventListener("scroll", function () {
+    const headers = document.querySelectorAll("header");
+    headers.forEach(header => {
+      if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  });
+</script>
+
+
+    
+    <script>
+      $(document).ready(function () {
+        $(".btn-close").click(function () {
+          // alert("hi")
+          $("#information_modal").modal("hide");
+        });
+      });
+    </script>
+  </body>
+</html>

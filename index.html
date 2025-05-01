@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WC24DZ");
+    </script>
+
+<!-- Google tag (gtag.js) -->
+<script
+async
+src="https://www.googletagmanager.com/gtag/js?id=AW-812624000"
+></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag("js", new Date());
+
+gtag("config", "AW-812624000");
+</script>
+
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>NeoLiv Grandpark</title>
+    <title class="title_hidden_header">NeoLiv Grandpark</title>
 
     <link rel="icon" href="https://neoliv.in/favicon.ico" />
     <link rel="stylesheet" href="./asset/css/animate.min.css" />
@@ -20,7 +51,14 @@
     <!-- <link rel="stylesheet" href="./asset/css/cubeportfolio.min.css" /> -->
     <link rel="stylesheet" href="./asset/css/jquery.fancybox.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
-
+    <link
+    rel="stylesheet"
+    href="https://cdn.propstory.com/assets/css/common.css"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdn.propstory.com/assets/vendor/intlTelInput/css/intlTelInput.css"
+/>
     <!-- <link
       rel="stylesheet"
       type="text/css"
@@ -36,6 +74,7 @@
     <link rel="stylesheet" href="./asset/css/home.css" />
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
@@ -212,6 +251,7 @@
           margin-left: 0% !important;
           width: 50% !important;
           left: 0;
+          padding: 0 !important;
           top: 4px;
           position: absolute;
         }
@@ -222,9 +262,11 @@
 
       /* mansi */
       .new_logo img {
-        margin-left: 46%;
-        width: 51%;
+    margin-left: 32%;
+    width: 72%;
+    padding: 0.5rem;
 }
+
     </style>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -233,7 +275,7 @@
 
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="90">
     <!--Loader Start -->
-    <div class="loader">
+    <!-- <div class="loader">
       <div class="loader-inner">
         <div class="loader-blocks">
           <span class="block-1"></span>
@@ -246,7 +288,7 @@
           <span class="block-8"></span>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--Loader End-->
 
     <header>
@@ -260,7 +302,7 @@
               class="header-menu-icon"
               id="sidemenu_toggle"
             >
-              <i class="fa fa-bars"></i> MENU
+              <i class="fa fa-bars"></i>
             </a>
           </div>
 
@@ -358,12 +400,11 @@
           </nav>
           <div class="side-footer w-100">
             <ul class="social-icons-simple">
-              <li>
+              <!-- <li>
                 <a class="youtube-text-hvr" href="" target="_blank"
                   ><i class="fa fa-youtube-play"></i>
                 </a>
-              </li>
-              <li>&nbsp;</li>
+              </li> -->
               <li>
                 <a
                   class="document-text-hvr"
@@ -384,62 +425,27 @@
     </header>
     <!--Header end-->
 
-    <!--slider-->
-    <section id="home" class=" position-relative text-white desk" 
-    style="height: 100vh; overflow: hidden; background: url('./asset/latestImages/Desktopbanner.jpg') no-repeat center center/cover;">
-     <!-- Overlay for dark effect -->
-      <!-- <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.55); z-index: 1;"></div> -->
-      
-      <!-- Content -->
-      <div class="hero-section1  position-absolute top-50 start-50 translate-middle text-center px-3" style="z-index: 2;">
-        <h1 class="display-4 fw-bold mb-4">NEOLIV SONIPAT</h1>
-        <p class="lead mb-4 text-white fw-bold">
-          WHERE NATURE BEGINS THE CONVERSATION.
-        </p>
-      </div>
-    
-      <!-- Discover More Button at the Bottom -->
-      <div class="position-absolute bottom-0 start-50 translate-middle-x mb-4 text-center" style="z-index: 2;">
-        <a href="#overview" class="discover-more-link text-white text-decoration-none fw-semibold d-inline-block">
-          DISCOVER MORE <br />↓
-        </a>
-      </div>
-    
-
+  
+  
+    <section id="home" class="position-relative home text-white desk" style="height: 100vh; overflow: hidden;">
     </section>
-    
-    
+
     
     
 
     <section
   id="home"
-  class="position-relative text-white mob hero-section1 "
-  style="height: 100vh; overflow: hidden; margin-top: -14px; background-image: url('./asset/latestImages/MobileBanner.jpg'); background-size: cover; background-position: center;"
+  class="position-relative home1 text-white mob"
+  style="height: 100vh; overflow: hidden;"
 >
-  <!-- Overlay for dark effect -->
-  <!-- <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.55); z-index: 1;"></div> -->
 
-  <!-- Content -->
-  <div class="position-absolute top-50 start-50 translate-middle text-center px-3 mobile_info" style="z-index: 2;">
-    <h1 class="display-4 fw-bold mb-3">NEOLIV SONIPAT</h1>
-    <p class="lead text-white fw-bold">
-      WHERE NATURE BEGINS THE CONVERSATION.
-    </p>
-  </div>
-
-  <!-- Discover More Button at the Bottom -->
-  <!-- <div class="position-absolute bottom-0 start-50 translate-middle-x mb-4 text-center" style="z-index: 2;">
-    <a href="#next-section" class="discover-more-link text-white text-decoration-none fw-semibold d-inline-block">
-      DISCOVER MORE <br />↓
-    </a>
-  </div> -->
 </section>
 
 
     <section class="bg-lightmixed section-padding-bottom" id="overview">
       <div class="container">
         <!--Heading-->
+
         <div class="row">
           <div
             class="col-md-12 text-center aos-item"
@@ -448,7 +454,7 @@
           >
             <div class="title d-inline-block">
               <h2 class="third-color mb-3">
-                YOUR GRAND LIFE IS HERE 
+                  Your Grand Life Is Here
                 <!-- <span>life</span> -->
               </h2>
               <p class="italic">
@@ -459,16 +465,7 @@
                 
               </p>
             </div>
-            <!-- <div class="title text-center title-2">
-              <h2 class="third-color mb-3">
-                <span
-                  ><img
-                    src="https://magicpage-dev.propstory.com/ImageUploads/VBHC%20Landscape/1nnx57g9rm9gqkael.png"
-                    class="NL_logo"
-                    alt=""
-                /></span>
-              </h2>
-            </div> -->
+ 
           </div>
         </div>
       </div>
@@ -484,7 +481,7 @@
         <div class="col-md-12">
           <span class="parallax-top-light">Lifestyle Image</span>
           <img
-            src="./asset/latestImages/2.jpg"
+            src="./asset/latestImages/5.jpg"
             alt="location-image"
             style="width: 100%; height: auto; background-attachment: fixed"
           />
@@ -495,7 +492,7 @@
     <!-- <section
       class="main-image1 single-items parallax banner-desktop"
       style="
-        background-image: url(./asset/latestImages/2.jpg);
+        background-image: url(./asset/latestImages/5.jpg);
         background-attachment: fixed;
       "
     >
@@ -507,78 +504,11 @@
 
 
 
-    <section
-    class="section-3 bg-lightmixed banner-mobile"
-    style="position: relative; overflow: hidden; padding: 100px 0; background-image: url('./asset/latestImages/5.jpg'); background-size: cover; background-position: center;"
-  >
-    <!-- Dark overlay -->
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1;"></div>
-  
-    <!-- Content -->
-    <div class="container" style="position: relative; z-index: 2;">
-      <div class="row justify-content-center">
-        <div class="col-md-12 text-center text-white">
-          <div class="title d-inline-block text-white">
-            <h2 class="third-color mb-3 text-white">
-              A SOCIAL ZONE <br />LIKE NO OTHER
-            </h2>
-            <p class="mb-3 text-white">
-              30,000 sq. ft. to gather, move, unwind, and indulge.
-            </p>
-            <p class="mb-3 text-white">Curated for everything from quiet mornings to spirited evenings.</p>
-            <div style="margin-top: 40px">
-              <a
-                data-fancybox="group-two"
-                href="https://d3aw1acw0qsnfa.cloudfront.net/images/master-plan-new.jpg"
-                id="masterplan"
-                class="btn btn-large btn-gradient1 btn-rounded"
-                >EXPLORE THE MASTERPLAN</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+   
   
 
 
-    <section
-    class="main-image1 single-items parallax banner-desktop"
-    style="background-image: url(./asset/latestImages/5.jpg); position: relative; background-size: cover; background-position: center; padding: 150px 0;"
-  >
-    <!-- Overlay -->
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1;"></div>
-  
-    <div class="container" style="position: relative; z-index: 2;">
-      <div class="row justify-content-center">
-        <div class="col-md-10 text-center">
-          <div class="title d-inline-block text-white">
-            <h2 class="third-color mb-3 text-white">
-              A SOCIAL ZONE <br />LIKE NO OTHER
-            </h2>
-            <p class="mb-3 text-white">
-              30,000 sq. ft. to gather, move, unwind, and indulge.
-            </p>
-            <p class="mb-3 text-white">Curated for everything from quiet mornings to spirited evenings.</p>
-            <div style="margin-top: 70px">
-              <a
-                data-fancybox="group-two"
-                href="https://d3aw1acw0qsnfa.cloudfront.net/images/master-plan-new.jpg"
-                id="masterplan"
-                class="btn btn-large btn-gradient1 btn-rounded"
-                >EXPLORE THE MASTERPLAN</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-
-
-    <section class="bg-lightmixed section-padding-bottom">
+    <section class="bg-lightmixed1 section-padding-bottom building_bg" >
       <div class="container">
         <!--Heading-->
         <div class="row">
@@ -589,19 +519,87 @@
           >
             <div class="title d-inline-block">
               <h2 class="third-color mb-3">
-                AN URBAN FOREST <br />UNLIKE ANY OTHER 
+                A Social Zone Like No Other
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div
+          class="col-md-6 text-center aos-item"
+          data-aos="fade-up"
+          data-aos-duration="2500"
+        >
+        <img
+        src="./asset/latestImages/5.jpg"
+        alt="location-image"
+        data-aos="fade-up"
+            data-aos-duration="2500"
+        style="width: 100%; height: auto; background-attachment: fixed"
+      />
+          
+        </div>
+          <div
+            class="col-md-6 text-center aos-item"
+            data-aos="fade-up"
+            data-aos-duration="2500"
+          >
+            <div class="title d-inline-block" data-aos="fade-up"
+            data-aos-duration="2500">
+        
+              <p class="mb-3">
+                30,000 sq. ft. to gather, move, unwind, and indulge.
+              </p>
+              <p class="mb-3">Curated for everything from quiet mornings to spirited evenings.</p>
+              <div style="margin-top: 70px">
+                <a data-fancybox="group-two" href="https://d3aw1acw0qsnfa.cloudfront.net/images/master-plan-new.jpg" id="masterplan" class="btn btn-large btn-gradient1 btn-rounded">EXPLORE THE MASTERPLAN</a>
+              </div>
+            </div>
+            <!-- <div class="title text-center title-2">
+              <h2 class="third-color mb-3">
+                <span
+                  ><img
+                    src="https://magicpage-dev.propstory.com/ImageUploads/VBHC%20Landscape/1nnx57g9rm9gqkael.png"
+                    class="NL_logo"
+                    alt=""
+                /></span>
+              </h2>
+            </div> -->
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  
+
+
+    <section class="bg-lightmixed section-padding-bottom pt-5">
+      <div class="container">
+        <!--Heading-->
+        <div class="row">
+          <div
+            class="col-md-12 text-center aos-item"
+            data-aos="fade-up"
+            data-aos-duration="2500"
+          >
+            <div class="title d-inline-block" data-aos="fade-up"
+            data-aos-duration="2500">
+              <h2 class="third-color mb-3">
+                An Urban Forest Unlike Any Other
+                <!-- AN URBAN FOREST <br />UNLIKE ANY OTHER  -->
                 <!-- <span>unlike</span> -->
               </h2>
             </div>
           </div>
         </div>
-        <div class="row title">
+        <div class="row title" >
           <div class="col-lg-6">
-            <p class="text_left">
+            <p class="text_left" data-aos="fade-up"
+            data-aos-duration="2500">
               Wander shaded trails,<br>
 pause by the stream,<br>
-and breathe in silence wrapped in green.
-This isn’t just greenery, it’s nature herself. 
+and breathe in silence wrapped in green. <br>
+This isn’t just greenery, it’s nature herself. <br>
 Thoughtfully reimagined at your doorstep
 
             </p>
@@ -642,10 +640,11 @@ Thoughtfully reimagined at your doorstep
               </a>
             </p>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" >
             <img
               src="./asset/latestImages/9.jpg"
-              alt="Urban Forest"
+              alt="Urban Forest" data-aos="fade-up"
+              data-aos-duration="2500"
               class="img-fluid rounded-4 shadow"
               style="max-height: 500px; object-fit: cover"
             />
@@ -654,98 +653,7 @@ Thoughtfully reimagined at your doorstep
       </div>
     </section>
 
-    <section
-    class="main-image1 single-items parallax banner-desktop"
-    style="background-image: url('./asset/latestImages/3.jpg'); background-size: cover; background-position: center; padding: 150px 0; position: relative;"
-  >
-    <!-- Dark Overlay -->
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1;"></div>
-  
-    <!-- Content -->
-    <div class="container" style="position: relative; z-index: 2;">
-      <div class="row">
-        <div class="col-md-12 text-center text-white">
-          <!-- <span class="parallax-top-light">Lifestyle Image</span> -->
-          <div class="title d-inline-block">
-            <h2 class="third-color mb-3 text-white desktop-view">
-              ALL THE SPACE <br />TO JUST BE
-            </h2>
-            <p class="text-white">
-              A home where children chase butterflies, not WiFi.<br>
-              Where mornings stretch wide,<br> and life flows slow, in endlessly green grandeur.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section
-  class="section-3 bg-lightmixed banner-mobile"
-  style="position: relative; overflow: hidden; padding: 100px 0; background-image: url('./asset/latestImages/3.jpg'); background-size: cover; background-position: center;"
->
-  <!-- Dark Overlay -->
-  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1;"></div>
-
-  <!-- Content -->
-  <div class="container" style="position: relative; z-index: 2;">
-    <div class="row">
-      <div class="col-md-12 text-center text-white">
-        <!-- <span class="parallax-top-light">Lifestyle Image</span> -->
-
-        <div class="title d-inline-block">
-          <h2 class="third-color text-white mobile-view" style="line-height: 1.1; margin-bottom: 0px">
-            ALL THE SPACE TO
-          </h2>
-          <h2 class="third-color mb-3 text-white mobile-view" style="margin-top: 5px">
-            JUST BE
-          </h2>
-          <p class="text-white">
-            A home where children chase butterflies, not WiFi.
-            Where mornings stretch wide, and life flows slow, in endlessly green grandeur.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-    <!-- <section
-      class="section-3 bg-lightmixed banner-mobile"
-      style="overflow: hidden"
-    >
-      <div class="row">
-        <div class="col-md-12">
-          <span
-            class="parallax-top-light"
-            style="background: #4a5c47; color: #fff"
-            >Actual Photo</span
-          >
-          <img
-            src="./asset/latestImages/1.jpg"
-            alt="location-image"
-            style="width: 100%; height: auto"
-          />
-        </div>
-      </div>
-    </section>
-    <section
-      class="main-image1 single-items parallax banner-desktop"
-      style="background-image: url(./asset/latestImages/1.jpg)"
-    >
-      <div class="row">
-        <div class="col-md-12">
-          <span
-            class="parallax-top-light"
-            style="background: #4a5c47; color: #fff"
-            >Actual Photo</span
-          >
-        </div>
-      </div>
-    </section> -->
-
-    <section class="bg-lightmixed section-padding-bottom" id="amenities">
+    <section class="bg-lightmixed1 section-padding-bottom pt-5">
       <div class="container">
         <!--Heading-->
         <div class="row">
@@ -755,20 +663,599 @@ Thoughtfully reimagined at your doorstep
             data-aos-duration="2500"
           >
             <div class="title d-inline-block">
+              <h2 class="third-color mb-3">
+                All The Space To Just Be
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row title">
+          <div class="col-lg-6" data-aos="fade-up"
+          data-aos-duration="2500">
+            <img
+              src="./asset/latestImages/15.jpg"
+              alt="Urban Forest"
+              class="img-fluid rounded-4 shadow"
+              style="max-height: 500px; object-fit: cover"
+            />
+          </div>
+          <div class="col-lg-6">
+            <p class="text_left1" data-aos="fade-up"
+            data-aos-duration="2500">
+              A home where children chase butterflies, not WiFi.<br>
+              Where mornings stretch wide,<br>
+              and life flows slow, in endlessly green grandeur.
+            </p>
+
+            <p>
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#information_modal"
+                class="btn btn-gradient btn-rounded px-5 py-2"
+                style="
+                  font-size: 1rem;
+                  font-weight: 500;
+                  font-style: normal;
+                  border-radius: 30px;
+                  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+                  transition: all 0.3s;
+                  margin: 0 0 20px 0;
+                "
+              >
+                DISCOVER MORE
+              </a>
+            </p>
+          </div>
+         
+        </div>
+      </div>
+    </section>
+
+   
+    
+    <section class="bg-lightmixed mob section-padding-bottom" >
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-12 text-center aos-item"
+            data-aos="fade-up"
+            data-aos-duration="2500"
+          >
+            <div class="title d-inline-block">
+              <h2 class="third-color mb-3">
+                Lifestyle At Grand Park
+                <!-- LIFESTYLE AT GRAND PARK -->
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide" data-aos="fade-up"
+              data-aos-duration="2500">
+                <div class="col-md-3 mb-5">
+                  <a href="./asset/latestImages/Lifestyle/Couple doing Yoga.jpg" data-lightbox="gallery">
+                    <div class="hover-gallery position-relative">
+                      <img src="./asset/latestImages/Lifestyle/Couple doing Yoga.jpg" class="img-fluid rounded shadow" alt="Yoga Lawns">
+                      <div class="caption position-absolute bottom-0 start-0 w-100 text-white text-center p-2" style="background: rgba(0, 0, 0, 0.5); font-weight: 500;">
+                        Yoga Lawns
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide" data-aos="fade-up"
+              data-aos-duration="2500">
+                <div class="col-md-3 mb-5">
+                  <a href="./asset/latestImages/Lifestyle/Familyatpool.jpg" data-lightbox="gallery" >
+                    <div class="hover-gallery">
+                      <img src="./asset/latestImages/Lifestyle/Familyatpool.jpg" class="img-fluid rounded shadow" alt="Gallery Image 2">
+                      <div class="caption position-absolute bottom-0 start-0 w-100 text-white text-center p-2" style="background: rgba(0, 0, 0, 0.5); font-weight: 500;">
+                        Resort Style Pool
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide" data-aos="fade-up"
+              data-aos-duration="2500">
+                <div class="col-md-3 mb-5">
+                  <a href="./asset/latestImages/Lifestyle/couple running in park.jpg" data-lightbox="gallery" data-title="Image 3">
+                    <div class="hover-gallery">
+                      <img src="./asset/latestImages/Lifestyle/couple running in park.jpg" class="img-fluid rounded shadow" alt="Gallery Image 3">
+                      <div class="caption position-absolute bottom-0 start-0 w-100 text-white text-center p-2" style="background: rgba(0, 0, 0, 0.5); font-weight: 500;">
+                        Dedicated Jogging Path
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+               <div class="swiper-slide" data-aos="fade-up"
+               data-aos-duration="2500">
+                <div class="col-md-3 mb-5">
+                  <a href="./asset/latestImages/lifestyle/Fine dining concept.jpg" data-lightbox="gallery" data-title="Image 4">
+                    <div class="hover-gallery">
+                      <img src="./asset/latestImages/lifestyle/Fine dining concept.jpg" class="img-fluid rounded shadow" alt="Gallery Image 4">
+                      <div class="caption position-absolute bottom-0 start-0 w-100 text-white text-center p-2" style="background: rgba(0, 0, 0, 0.5); font-weight: 500;">
+                        Fine Dining 
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide" data-aos="fade-up"
+              data-aos-duration="2500">
+                <div class="col-md-3 mb-5">
+                  <a href="./asset/latestImages/Sports/Yoga class in a park.jpg" data-lightbox="gallery" data-title=" Modern Gym with windows">
+                    <div class="hover-gallery">
+                      <img src="./asset/latestImages/Sports/Yoga class in a park.jpg" class="img-fluid rounded shadow" alt="Gallery Image 4">
+                      <div class="caption position-absolute bottom-0 start-0 w-100 text-white text-center p-2" style="background: rgba(0, 0, 0, 0.5); font-weight: 500;">
+                        Modern Gym with windows
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide" data-aos="fade-up"
+              data-aos-duration="2500">
+                <div class="col-md-3 mb-5">
+                  <a href="./asset/latestImages/Lifestyle/SPA.jpg" data-lightbox="gallery" data-title="Image 4">
+                    <div class="hover-gallery">
+                      <img src="./asset/latestImages/Lifestyle/SPA.jpg" class="img-fluid rounded shadow" alt="Gallery Image 4">
+                      <div class="caption position-absolute bottom-0 start-0 w-100 text-white text-center p-2" style="background: rgba(0, 0, 0, 0.5); font-weight: 500;">
+                        Elegant SPA
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide" data-aos="fade-up"
+              data-aos-duration="2500">
+                <div class="col-md-3 mb-5">
+                  <a href="./asset/latestImages/Sports/Modern billiard room.jpg" data-lightbox="gallery" data-title=" Modern Gym with windows">
+                    <div class="hover-gallery">
+                      <img src="./asset/latestImages/Sports/Modern billiard room.jpg" class="img-fluid rounded shadow" alt="Gallery Image 4">
+                      <div class="caption position-absolute bottom-0 start-0 w-100 text-white text-center p-2" style="background: rgba(0, 0, 0, 0.5); font-weight: 500;">
+                        Snooker Table
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              
+  
+        
+            </div>
+        
+            <div class="swiper-pagination mt-2"></div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="bg-lightmixed desk section-padding-bottom" >
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-12 text-center aos-item"
+            data-aos="fade-up"
+            data-aos-duration="2500"
+          >
+            <div class="title d-inline-block">
+              <h2 class="third-color mb-3">
+                Lifestyle At Grand Park
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-md-4 mb-4" data-aos="fade-up"
+          data-aos-duration="2500">
+            <a href="./asset/latestImages/Lifestyle/Couple doing Yoga.jpg" data-lightbox="gallery">
+              <div class="hover-gallery position-relative">
+                <img src="./asset/latestImages/Lifestyle/Couple doing Yoga.jpg" class="img-fluid rounded shadow" alt="Yoga Lawns">
+                <div class="caption position-absolute bottom-0 start-0 w-100 text-white text-center p-2" style="background: rgba(0, 0, 0, 0.5); font-weight: 500;">
+                  Yoga Lawns
+                </div>
+              </div>
+            </a>
+          </div>
+          
+    
+          <div class="col-md-4 mb-4" data-aos="fade-up"
+          data-aos-duration="2500">
+            <a href="./asset/latestImages/Lifestyle/Familyatpool.jpg" data-lightbox="gallery" >
+              <div class="hover-gallery">
+                <img src="./asset/latestImages/Lifestyle/Familyatpool.jpg" class="img-fluid rounded shadow" alt="Gallery Image 2">
+                <div class="caption position-absolute bottom-0 start-0 w-100 text-white text-center p-2" style="background: rgba(0, 0, 0, 0.5); font-weight: 500;">
+                  Resort Style Pool
+                </div>
+              </div>
+            </a>
+          </div>
+    
+          <div class="col-md-4 mb-4" data-aos="fade-up"
+          data-aos-duration="2500">
+            <a href="./asset/latestImages/Lifestyle/couple running in park.jpg" data-lightbox="gallery" data-title="Image 3">
+              <div class="hover-gallery">
+                <img src="./asset/latestImages/Lifestyle/couple running in park.jpg" class="img-fluid rounded shadow" alt="Gallery Image 3">
+                <div class="caption position-absolute bottom-0 start-0 w-100 text-white text-center p-2" style="background: rgba(0, 0, 0, 0.5); font-weight: 500;">
+                  Dedicated Jogging Path
+                </div>
+              </div>
+            </a>
+          </div>
+    
+          <div class="col-md-3 mb-4" data-aos="fade-up"
+          data-aos-duration="2500">
+            <a href="./asset/latestImages/lifestyle/Fine dining concept.jpg" data-lightbox="gallery" data-title="Image 4">
+              <div class="hover-gallery">
+                <img src="./asset/latestImages/lifestyle/Fine dining concept.jpg" class="img-fluid rounded shadow" alt="Gallery Image 4">
+                <div class="caption position-absolute bottom-0 start-0 w-100 text-white text-center p-2" style="background: rgba(0, 0, 0, 0.5); font-weight: 500;">
+                  Fine Dining 
+                </div>
+              </div>
+            </a>
+          </div>
+         
+    
+    
+          <div class="col-md-3 mb-4" data-aos="fade-up"
+          data-aos-duration="2500">
+            <a href="./asset/latestImages/Lifestyle/SPA.jpg" data-lightbox="gallery" data-title="Image 4">
+              <div class="hover-gallery">
+                <img src="./asset/latestImages/Lifestyle/SPA.jpg" class="img-fluid rounded shadow" alt="Gallery Image 4">
+                <div class="caption position-absolute bottom-0 start-0 w-100 text-white text-center p-2" style="background: rgba(0, 0, 0, 0.5); font-weight: 500;">
+                  Elegant SPA
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 mb-4" data-aos="fade-up"
+          data-aos-duration="2500">
+                <a href="./asset/latestImages/Sports/gym.jpg" data-lightbox="gallery" data-title=" Modern Gym with windows">
+                  <div class="hover-gallery">
+                    <img src="./asset/latestImages/Sports/gym.jpg" class="img-fluid rounded shadow" alt="Gallery Image 4">
+                    <div class="caption position-absolute bottom-0 start-0 w-100 text-white text-center p-2" style="background: rgba(0, 0, 0, 0.5); font-weight: 500;">
+                      Modern Gym with windows
+                    </div>
+                  </div>
+                </a>
+       </div>
+       <div class="col-md-3 mb-4" data-aos="fade-up"
+       data-aos-duration="2500">
+        <a href="./asset/latestImages/Sports/Modern billiard room.jpg" data-lightbox="gallery" data-title=" Modern Gym with windows">
+          <div class="hover-gallery">
+            <img src="./asset/latestImages/Sports/Modern billiard room.jpg" class="img-fluid rounded shadow" alt="Gallery Image 4">
+            <div class="caption position-absolute bottom-0 start-0 w-100 text-white text-center p-2" style="background: rgba(0, 0, 0, 0.5); font-weight: 500;">
+              Snooker Table
+            </div>
+          </div>
+        </a>
+</div>
+
+          </div>
+
+    
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-0 desk bg-lightmixed section-padding-bottom">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-12 text-center aos-item"
+            data-aos="fade-up"
+            data-aos-duration="2500"
+          >
+            <div class="title d-inline-block">
+              <h2 class="third-color mb-3">
+                Sports At Grand Park 
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+              <div class="row sports">
+                <div class="col-lg-6" data-aos="fade-up"
+                data-aos-duration="2500">
+                  <a href="./asset/latestImages/Sports/Pickleball player.jpg" data-lightbox="gallery">
+                    <div class="hover-gallery position-relative">
+                      <img src="./asset/latestImages/Sports/Pickleball player.jpg" class="img-fluid rounded shadow" alt="Couple Doing Yoga">
+                      <div class="caption position-absolute bottom-0 start-0 w-100 text-white text-center p-2" style="background: rgba(0, 0, 0, 0.5); font-weight: 500;">
+                        Pickle Ball Player
+                      </div>
+                    </div>
+                  </a>
+                
+                </div>
+                <div class="col-lg-6" data-aos="fade-up"
+                data-aos-duration="2500">
+                  <a href="./asset/latestImages/Sports/Tennis player in action.jpg" data-lightbox="gallery" >
+                    <div class="hover-gallery">
+                      <img src="./asset/latestImages/Sports/Tennis player in action.jpg" class="img-fluid rounded shadow" alt="Gallery Image 2">
+                      <div class="caption position-absolute bottom-0 start-0 w-100 text-white text-center p-2" style="background: rgba(0, 0, 0, 0.5); font-weight: 500;">
+                        Tennis Player
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+
+
+              
+              </div>
+
+              <div class="row sports">
+                <div class="col-lg-6" data-aos="fade-up"
+                data-aos-duration="2500">
+
+                      <a href="./asset/latestImages/Sports/Badminton player.jpg" data-lightbox="gallery" data-title="Image 3">
+                        <div class="hover-gallery">
+                          <img src="./asset/latestImages/Sports/Badminton player.jpg" class="img-fluid rounded shadow" alt="Gallery Image 3">
+                          <div class="caption position-absolute bottom-0 start-0 w-100 text-white text-center p-2" style="background: rgba(0, 0, 0, 0.5); font-weight: 500;">
+                            Badmintosn Player
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up"
+                    data-aos-duration="2500">
+                      <a href="./asset/latestImages/Sports/Cricket player.jpg" data-lightbox="gallery" data-title="Image 4">
+                        <div class="hover-gallery">
+                          <img src="./asset/latestImages/Sports/Cricket player.jpg" class="img-fluid rounded shadow" alt="Gallery Image 4">
+                          <div class="caption position-absolute bottom-0 start-0 w-100 text-white text-center p-2" style="background: rgba(0, 0, 0, 0.5); font-weight: 500;">
+                            Cricket Player
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                 </div>
+              </div>
+              <div class="col-lg-6" data-aos="fade-up"
+              data-aos-duration="2500">
+           
+                <a href="./asset/latestImages/Sports/Office with game room.jpg" data-lightbox="gallery" data-title="Image 4">
+                  <div class="hover-gallery">
+                    <img src="./asset/latestImages/Sports/Office with game room.jpg" class="img-fluid rounded shadow" alt="Gallery Image 4">
+                    <div class="caption position-absolute bottom-0 start-0 w-100 text-white text-center p-2" style="background: rgba(0, 0, 0, 0.5); font-weight: 500;">
+                      OFFICE WITH GAME ROOM
+                    </div>
+                  </div>
+                </a>
+            </div>
+             </div>
+
+            
+
+ 
+
+         
+    
+
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-0 mob bg-lightmixed section-padding-bottom">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-12 text-center aos-item"
+            data-aos="fade-up"
+            data-aos-duration="2500"
+          >
+            <div class="title d-inline-block">
+              <h2 class="third-color mb-3">
+                Sports At Grand Park 
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide" data-aos="fade-up"
+              data-aos-duration="2500">
+                <div class="col-md-3 mb-5">
+                  <a href="./asset/latestImages/Sports/Pickleball player.jpg" data-lightbox="gallery">
+                    <div class="hover-gallery position-relative">
+                      <img src="./asset/latestImages/Sports/Pickleball player.jpg" class="img-fluid rounded shadow" alt="Couple Doing Yoga">
+                      <div class="caption position-absolute bottom-0 start-0 w-100 text-white text-center p-2" style="background: rgba(0, 0, 0, 0.5); font-weight: 500;">
+                        Pickle Ball Player
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide" data-aos="fade-up"
+              data-aos-duration="2500">
+                <div class="col-md-3 mb-5">
+                  <a href="./asset/latestImages/Sports/Tennis player in action.jpg" data-lightbox="gallery" >
+                    <div class="hover-gallery">
+                      <img src="./asset/latestImages/Sports/Tennis player in action.jpg" class="img-fluid rounded shadow" alt="Gallery Image 2">
+                      <div class="caption position-absolute bottom-0 start-0 w-100 text-white text-center p-2" style="background: rgba(0, 0, 0, 0.5); font-weight: 500;">
+                        Tennis Player
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide" data-aos="fade-up"
+              data-aos-duration="2500">
+                <div class="col-md-3 mb-5">
+                  <a href="./asset/latestImages/Sports/Badminton player.jpg" data-lightbox="gallery" data-title="Image 3">
+                    <div class="hover-gallery">
+                      <img src="./asset/latestImages/Sports/Badminton player.jpg" class="img-fluid rounded shadow" alt="Gallery Image 3">
+                      <div class="caption position-absolute bottom-0 start-0 w-100 text-white text-center p-2" style="background: rgba(0, 0, 0, 0.5); font-weight: 500;">
+                        Badmintosn Player
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide" data-aos="fade-up"
+              data-aos-duration="2500">
+                <div class="col-md-3 mb-5">
+                  <a href="./asset/latestImages/Sports/Cricket player.jpg" data-lightbox="gallery" data-title="Image 4">
+                    <div class="hover-gallery">
+                      <img src="./asset/latestImages/Sports/Cricket player.jpg" class="img-fluid rounded shadow" alt="Gallery Image 4">
+                      <div class="caption position-absolute bottom-0 start-0 w-100 text-white text-center p-2" style="background: rgba(0, 0, 0, 0.5); font-weight: 500;">
+                        Cricket Player
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide" data-aos="fade-up"
+              data-aos-duration="2500">
+                <div class="col-md-3 mb-5">
+                  <a href="./asset/latestImages/Sports/Office with game room.jpg" data-lightbox="gallery" data-title="Image 4">
+                    <div class="hover-gallery">
+                      <img src="./asset/latestImages/Sports/Office with game room.jpg" class="img-fluid rounded shadow" alt="Gallery Image 4">
+                      <div class="caption position-absolute bottom-0 start-0 w-100 text-white text-center p-2" style="background: rgba(0, 0, 0, 0.5); font-weight: 500;">
+                        OFFICE WITH GAME ROOM
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+
+            </div>
+        
+            <div class="swiper-pagination mt-2"></div>
+          </div>
+
+
+             </div>
+
+            
+
+ 
+
+         
+    
+
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="bg-lightmixed1 section-padding-bottom" id="amenities">
+      <div class="container">
+        <!--Heading-->
+        <div class="row">
+          <div
+            class="col-md-12 text-center aos-item"
+            data-aos="fade-up"
+            data-aos-duration="2500"
+          >
+            <div class="title d-inline-block" data-aos="fade-up"
+            data-aos-duration="2500">
               <h2 class="third-color mb-3 desktop-view">
-                SPACES BUILT <br />TO CARE FOR YOU
+                Spaces Built To Care For You
                 <!-- <span>to </span> -->
               </h2>
               <h2 class="third-color mb-3 mobile-view">
-                SPACES <br />BUILT TO<br />
-                CARE FOR YOU
+               Spaces Built To Care For You
               </h2>
               <!-- <span style="padding-left: 10px">to </span
                 > -->
             </div>
           </div>
         </div>
-        <div class="row title">
+        <div class="fitness-center-section" data-aos="fade-up"
+        data-aos-duration="2500">
+          <div class="fitness-center-content">
+            <h2 class="title">GYM</h2>
+            <p>
+              A gym that energises,
+              A restaurant that delights,
+              Playrooms that spark joy,
+              Terraces that breathe,
+              A pool that calms.
+            </p>
+          </div>
+          <img
+            src="./asset/latestImages/10.jpg"
+            alt="Fitness Center"
+            class="fitness-center-img"
+          />
+        </div>
+        <div class="fitness-center-section" data-aos="fade-up"
+        data-aos-duration="2500">
+          <div class="fitness-center-content">
+            <h2 class="title">GYM</h2>
+            <p>
+              A gym that energises,
+              A restaurant that delights,
+              Playrooms that spark joy,
+              Terraces that breathe,
+              A pool that calms.
+            </p>
+          </div>
+          <img
+            src="./asset/latestImages/10.jpg"
+            alt="Fitness Center"
+            class="fitness-center-img"
+          />
+        </div>
+        <div class="fitness-center-section" data-aos="fade-up"
+        data-aos-duration="2500">
+          <div class="fitness-center-content">
+            <h2 class="title">GYM</h2>
+            <p>
+              A gym that energises,
+              A restaurant that delights,
+              Playrooms that spark joy,
+              Terraces that breathe,
+              A pool that calms.
+            </p>
+          </div>
+          <img
+            src="./asset/latestImages/10.jpg"
+            alt="Fitness Center"
+            class="fitness-center-img"
+          />
+        </div>
+        <div class="fitness-center-section" data-aos="fade-up"
+        data-aos-duration="2500">
+          <div class="fitness-center-content">
+            <h2 class="title">GYM</h2>
+            <p>
+              A gym that energises,
+              A restaurant that delights,
+              Playrooms that spark joy,
+              Terraces that breathe,
+              A pool that calms.
+            </p>
+          </div>
+          <img
+            src="./asset/latestImages/10.jpg"
+            alt="Fitness Center"
+            class="fitness-center-img"
+          />
+        </div>
+        
+        <!-- <div class="row title">
           <div class="col-lg-5">
         <p class="text_left">
           A gym that energises,<br>
@@ -782,7 +1269,7 @@ A pool that calms.
           For movement, moments, and everything in between.
           </p>
 
-            <p style="margin: 70px 0">
+            <p style="margin: 30px 0">
               <a class="btn btn-large btn-gradient btn-rounded" data-bs-toggle="modal" data-bs-target="#information_modal">DISCOVER MORE</a>
             </p>
           </div>
@@ -794,11 +1281,11 @@ A pool that calms.
               style="max-height: 500px; object-fit: cover"
             />
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
-    <section class="pt-0 bg-lightmixed section-padding-bottom" id="gallery">
+    <section class="bg-lightmixed desk section-padding-bottom" id="gallery">
   <div class="container">
     <div class="row">
       <div
@@ -808,69 +1295,182 @@ A pool that calms.
       >
         <div class="title d-inline-block">
           <h2 class="third-color mb-3">
-             A GLIMPSE INTO YOUR GRAND LIFE 
+            A Glimpse Into Your Grand Life
+             <!-- A GLIMPSE INTO YOUR GRAND LIFE  -->
              <!-- <span> Our</span> -->
           </h2>
         </div>
       </div>
     </div>
     <div class="row">
+      
 
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-aos="fade-up"
+      data-aos-duration="2500">
         <a href="./asset/latestImages/18.jpg" data-lightbox="gallery" data-title="Image 1">
           <div class="hover-gallery">
             <img src="./asset/latestImages/18.jpg" class="img-fluid rounded shadow" alt="Gallery Image 1">
-            <div class="overlay">View</div>
+            
           </div>
         </a>
       </div>
 
-      <div class="col-md-4 mb-4">
-        <a href="./asset/latestImages/9.jpg" data-lightbox="gallery" data-title="Image 2">
+      <div class="col-md-4 mb-4" data-aos="fade-up"
+      data-aos-duration="2500">
+        <a href="./asset/latestImages/9.jpg" data-lightbox="gallery" >
           <div class="hover-gallery">
             <img src="./asset/latestImages/9.jpg" class="img-fluid rounded shadow" alt="Gallery Image 2">
-            <div class="overlay">View</div>
+            
           </div>
         </a>
       </div>
 
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-aos="fade-up"
+      data-aos-duration="2500">
         <a href="./asset/latestImages/2.jpg" data-lightbox="gallery" data-title="Image 3">
           <div class="hover-gallery">
             <img src="./asset/latestImages/2.jpg" class="img-fluid rounded shadow" alt="Gallery Image 3">
-            <div class="overlay">View</div>
+            
           </div>
         </a>
       </div>
 
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-aos="fade-up"
+      data-aos-duration="2500">
         <a href="./asset/latestImages/8.jpg" data-lightbox="gallery" data-title="Image 4">
           <div class="hover-gallery">
             <img src="./asset/latestImages/8.jpg" class="img-fluid rounded shadow" alt="Gallery Image 4">
-            <div class="overlay">View</div>
+            
           </div>
         </a>
       </div>
 
     
 
-      <div class="col-md-4 mb-4">
-        <a href="./asset/latestImages/6.jpg" data-lightbox="gallery" data-title="Image 2">
+      <div class="col-md-4 mb-4" data-aos="fade-up"
+      data-aos-duration="2500">
+        <a href="./asset/latestImages/6.jpg" data-lightbox="gallery" >
           <div class="hover-gallery">
             <img src="./asset/latestImages/6.jpg" class="img-fluid rounded shadow" alt="Gallery Image 2">
-            <div class="overlay">View</div>
+            
           </div>
         </a>
       </div>
 
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-aos="fade-up"
+      data-aos-duration="2500">
         <a href="./asset/latestImages/3.jpg" data-lightbox="gallery" data-title="Image 4">
           <div class="hover-gallery">
             <img src="./asset/latestImages/3.jpg" class="img-fluid rounded shadow" alt="Gallery Image 4">
-            <div class="overlay">View</div>
+            
           </div>
         </a>
       </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="pt-0 bg-lightmixed mob section-padding-bottom" id="gallery">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-md-12 text-center aos-item"
+        data-aos="fade-up"
+        data-aos-duration="2500"
+      >
+        <div class="title d-inline-block">
+          <h2 class="third-color mb-3">
+            A Glimpse Into Your Grand Life
+
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide" data-aos="fade-up"
+          data-aos-duration="2500">
+            <div class="col-md-3 mb-5">
+              <a href="./asset/latestImages/18.jpg" data-lightbox="gallery" data-title="Image 1">
+                <div class="hover-gallery">
+                  <img src="./asset/latestImages/18.jpg" class="img-fluid rounded shadow" alt="Gallery Image 1">
+                  
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide" data-aos="fade-up"
+          data-aos-duration="2500">
+            <div class="col-md-3 mb-5">
+              <a href="./asset/latestImages/9.jpg" data-lightbox="gallery" >
+                <div class="hover-gallery">
+                  <img src="./asset/latestImages/9.jpg" class="img-fluid rounded shadow" alt="Gallery Image 2">
+                  
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide" data-aos="fade-up"
+          data-aos-duration="2500">
+            <div class="col-md-3 mb-5">
+              <a href="./asset/latestImages/2.jpg" data-lightbox="gallery" data-title="Image 3">
+                <div class="hover-gallery">
+                  <img src="./asset/latestImages/2.jpg" class="img-fluid rounded shadow" alt="Gallery Image 3">
+                  
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide" data-aos="fade-up"
+          data-aos-duration="2500">
+            <div class="col-md-3 mb-5">
+              <a href="./asset/latestImages/8.jpg" data-lightbox="gallery" data-title="Image 4">
+                <div class="hover-gallery">
+                  <img src="./asset/latestImages/8.jpg" class="img-fluid rounded shadow" alt="Gallery Image 4">
+                  
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide" data-aos="fade-up"
+          data-aos-duration="2500">
+            <div class="col-md-3 mb-5">
+              <a href="./asset/latestImages/6.jpg" data-lightbox="gallery" >
+                <div class="hover-gallery">
+                  <img src="./asset/latestImages/6.jpg" class="img-fluid rounded shadow" alt="Gallery Image 2">
+                  
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide" data-aos="fade-up"
+          data-aos-duration="2500">
+            <div class="col-md-3 mb-5">
+              <a href="./asset/latestImages/3.jpg" data-lightbox="gallery" data-title="Image 4">
+                <div class="hover-gallery">
+                  <img src="./asset/latestImages/3.jpg" class="img-fluid rounded shadow" alt="Gallery Image 4">
+                  
+                </div>
+              </a>
+            </div>
+          </div>
+
+
+
+      
+
+
+        </div>
+    
+        <div class="swiper-pagination mt-2"></div>
+      </div>
+
+
+
+     
 
     </div>
   </div>
@@ -971,7 +1571,7 @@ A pool that calms.
           >
             <div class="title d-inline-block">
               <h2 class="third-color mb-3">
-                  THE LOCATION
+                  The Location
                  <!-- <span> Our</span> -->
               </h2>
             </div>
@@ -1089,7 +1689,7 @@ A pool that calms.
       </button>
     </div>
 
-    <div id="mybutton1">
+    <!-- <div id="mybutton1">
       <a
       href="https://api.whatsapp.com/send?phone=919999999999&amp;text=Hi! I'm Interested In Mana Dale. Please share Details."
       class="text-white"
@@ -1100,10 +1700,7 @@ A pool that calms.
     </button> 
       
     </a>
-      <!-- <button href="#" class="feedback1" id="modal_view_right" data-bs-toggle="modal" data-bs-target="#information_modal">
-        Enquire now
-      </button> -->
-    </div>
+    </div> -->
 
     <div
       class="modal fade"
@@ -1112,13 +1709,13 @@ A pool that calms.
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
+      <div class="modal-dialog shadow-lg">
         <div class="modal-content">
           <div class="modal-header">
             <button
               type="button"
               class="btn-close"
-              data-dismiss="modal"
+              data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
           </div>
@@ -1151,101 +1748,6 @@ A pool that calms.
               authority(ies) by operation of any applicable law, court order or
               direction.
             </p>
-            <p><strong>Collection and Usage of Information</strong></p>
-
-            <ul>
-              <li>
-                We use your personal information only for providing and
-                improving the website
-              </li>
-              <li>
-                We compile personally identifiable information when you submit
-                any form on this website.
-              </li>
-              <li>
-                While using this website, we may ask you to provide us with
-                certain personally identifiable information that can be used to
-                contact or identify you. Personally identifiable information may
-                include but is not limited to your name, email address and
-                contact number.
-              </li>
-              <li>
-                Once a form is submitted and it reaches us, the information
-                provided by you is saved in our database and is not shared with
-                any third party.
-              </li>
-              <li>
-                We use this information to revert to your query and future
-                reference, and to contact you about products &amp; services.
-              </li>
-              <li>
-                Like many website operators, we collect information that your
-                browser sends whenever you visit our website. This log data may
-                include information such as your computer's internet protocol,
-                IP address, browser type, browser version, mobile device
-                information, location, network carrier, the pages of our website
-                that you visit, the time and date of your visit, the time spent
-                on those pages and other statistics.
-              </li>
-            </ul>
-
-            <p><strong>The following information is collected:</strong></p>
-
-            <ul>
-              <li>
-                Your personal information including but not limited to your
-                name, email address and contact number
-              </li>
-              <li>
-                A record of any interaction and correspondence between you and
-                the Company.
-              </li>
-              <li>
-                Your responses to customer surveys conducted by the Company or
-                on their behalf.
-              </li>
-              <li>
-                Details of your visits to this website and other information
-                collected through cookies and other tracking technology
-                including information that you look at.
-              </li>
-              <li>Online Identifiers.</li>
-            </ul>
-
-            <p><strong>Sharing and Disclosure of Information:</strong></p>
-
-            <ul>
-              <li>
-                We do not sell, rent, or share personally identifiable
-                information made available to the Company.
-              </li>
-              <li>
-                We share personally identifiable information to other companies
-                or people only if:
-                <ol>
-                  <li>
-                    We have consent to share the information; or we may disclose
-                    personal information if required to do so by law or in the
-                    good faith belief that such disclosure is reasonably
-                    necessary to respond to court orders/summons/directions, or
-                    other legal process.
-                  </li>
-                  <li>
-                    We may disclose personal information to law enforcement
-                    offices, third party rights owners, or others in the good
-                    faith belief that such disclosure is reasonably necessary
-                    to: enforce our Terms of Privacy Policy; respond to claims
-                    that an advertisement, posting, or other content violates
-                    the rights of a third party; or protect the rights, property
-                    or personal safety of our users or the general public.
-                  </li>
-                  <li>
-                    We find that your actions on our website violate our
-                    <a href="#">Terms and Conditions</a>.
-                  </li>
-                </ol>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
@@ -1264,7 +1766,7 @@ A pool that calms.
             <button
               type="button"
               class="btn-close"
-              data-dismiss="modal"
+              data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
           </div>
@@ -1300,102 +1802,6 @@ A pool that calms.
               notices and copyright information, the terms of which must be
               observed and followed.
             </p>
-            <p>
-              While we endeavour to keep the information up to date and correct,
-              we make no representations or warranties of any kind, express or
-              implied, about the completeness, accuracy, reliability,
-              suitability, or availability with respect to the website or the
-              information, products, services, or related graphics contained on
-              the website for any purpose. Any reliance you place on such
-              information is therefore strictly at your own risk.
-            </p>
-            <p>
-              Nothing on this website constitutes advertising, marketing,
-              booking, selling or an offer for sale, or invitation to purchase a
-              unit in the project in any manner by the Company. This website
-              does not constitute part of a legal contract. By visiting this
-              website, the user agrees that the information including brochures
-              and marketing collaterals on this website are solely for
-              informational purposes only and the user has not relied on this
-              information for making any booking/purchase a unit in the project
-              of the Company.
-            </p>
-            <p>
-              The content on this website, regarding the project and in respect
-              of the plots and/or building, project layout, area, amenities,
-              landscapes, other services, and other relevant terms, are based on
-              the approved and sanctioned plans subject to any modification and
-              change in consonance with relevant laws or as directed by the
-              authorities. The visuals, pictures, images/renderings/maps of the
-              project are purely indicative, informative, and representational
-              in nature and only an artistic impression, unless specifically
-              claimed to be actual photographs.
-            </p>
-            <p>
-              You are requested to independently, either directly or through
-              your legal/financial consultants, thoroughly verify all
-              details/documents pertaining to this project as available on
-              (bearing HRERA registration number
-              RC/REP/HARERA/GGM/696/428/2023/40) or at Company's office to
-              understand the documents and information in all respect prior to
-              concluding any decision for buying. The Company will not be
-              accepting any bookings or allotments solely based on the images,
-              material, stock photography, projections, details, and
-              descriptions that are currently available and/or displayed on this
-              website.
-            </p>
-            <p>
-              This website and all its contents are provided on"as is" and on"as
-              available" basis. No information given under this website creates
-              a warranty or expand the scope of any warranty that cannot be
-              disclaimed under applicable law. Your use of this website is
-              solely at your own risk. This website is for guidance only. It
-              does not constitute part of an offer or contract. The design &amp;
-              specifications are subject to change without prior notice. The
-              computer-generated images are the artistic impression and are an
-              indicative of the actual designs.
-            </p>
-            <p>
-              You agree to defend, indemnify, and hold harmless the Company and/
-              or its associate entities, their officers, directors, employees,
-              and agents, from and against any claims, actions or demands,
-              including without limitation reasonable legal and accounting fees,
-              alleging, or resulting from your use of the website or your breach
-              of these terms and conditions of this website. The Company
-              expressly disclaims all liability in respect to actions taken or
-              not taken based on any or all the contents of this website.
-            </p>
-            <p>
-              This website may contain links to other websites including those
-              operated and maintained by third parties. The Company includes
-              these links solely as a convenience to you, and the presence of
-              such a link does not imply a responsibility for the linked website
-              or an endorsement of the linked website, its operator, or its
-              contents. The Company makes no representations whatsoever about
-              any other website which you may access through this one. When you
-              access a non-Company website, even one that may contain the
-              Company-logo, please note that it is independent from the Company,
-              and that the Company has no control over the content on that
-              website. It is up to you to take precautions to ensure that
-              whatever you select for your use is free of such items as viruses,
-              worms, trojan horses and other items of a destructive nature.
-            </p>
-            <p>
-              In no event shall the Company be liable to any party for any
-              direct, indirect, special, or other consequential damages for any
-              use of this website, or any other hyperlinked website, including
-              without limitation, any lost profits, business interruption, loss
-              of programs or other data on your information handling system or
-              otherwise, even if we are expressly advised of the possibility of
-              such damages.
-            </p>
-            <p>
-              The foregoing are subject to the prevailing laws of India and RERA
-              authority and/or courts at Gurugram, Haryana and High Court of
-              Punjab and Haryana, India shall have the exclusive jurisdiction on
-              any dispute that may arise out of the use of this website.
-            </p>
-            <p>We thank you for your patience and understanding.</p>
           </div>
         </div>
       </div>
@@ -1410,7 +1816,7 @@ A pool that calms.
       aria-labelledby="myModalLabel2"
     >
       <div class="modal-dialog" role="document">
-        <form method="post">
+        <div>
           <div class="modal-content" style="padding-top: 2.5rem">
             <div
               class="modal-header"
@@ -1422,7 +1828,7 @@ A pool that calms.
               <button
                 type="button"
                 class="btn-close"
-                data-dismiss="modal"
+                data-bs-dismiss="modal"
                 aria-label="Close"
               >
                 <span aria-hidden="true"> </span>
@@ -1432,11 +1838,22 @@ A pool that calms.
               class="modal-body get_quote_view_modal_body"
               style="border: none; text-align: left"
             >
-              <form id="contact_form" name="contact_form" method="post">
+              <div id="contact_form">
+                <div class="enq_form">
+                  <div class="row success_msg" style="display: none">
+                    <h4>
+                      We appreciate your interest in our project. Our team shall contact
+                      you very soon.
+                    </h4>
+                  </div>
+                  <div class="row error_msg" style="display: none">
+                    <h4>Sorry! something went wrong. Please try again.</h4>
+                  </div>
+                  <div class="sidenav_form">
                 <div class="mb-1">
                   <label for="name_input"> First Name:</label>
                   <input
-                    class="form-control"
+                    class="form-control name"
                     type="text"
                     id="first_name"
                     name="first_name"
@@ -1445,7 +1862,7 @@ A pool that calms.
                 <div class="mb-1">
                   <label for="email_addr"> Email:</label>
                   <input
-                    class="form-control"
+                    class="form-control email"
                     type="email"
                     id="email"
                     name="email"
@@ -1455,16 +1872,17 @@ A pool that calms.
                 <div class="mb-1">
                   Phone:
                   <input
-                    class="form-control"
-                    type="text"
+                    class="form-control phone"
+                    type="tel"
                     id="phone"
                     name="phone"
+                    placeholder=""
                   />
                 </div>
                 <div class="mb-1 text-center">
                   <button
                     type="submit"
-                    class="btn btn-large btn-gradient btn-rounded mt-2"
+                    class="btn btn-large btn-gradient btn-rounded mt-2 submit_button"
                   >
                     <i
                       class="fa fa-spinner fa-spin mr-2 d-none"
@@ -1473,10 +1891,12 @@ A pool that calms.
                     <span>SUBMIT</span>
                   </button>
                 </div>
-              </form>
+                </div>
+                </div>
+              </div>
             </div>
           </div>
-        </form>
+        </div>
       </div>
       <!-- modal-content -->
     </div>
@@ -1526,20 +1946,20 @@ A pool that calms.
     <script src="./asset/js/jquery-3.3.1.min.js"></script>
     <script src="./asset/js/popper.min.js"></script>
     <script src="./asset/js/bootstrap.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
     <script src="./asset/js/jquery.appear.js"></script>
     <script src="./asset/js/isotope.pkgd.min.js"></script>
-    <!-- <script src="./asset/js/jquery.cubeportfolio.min.js"></script> -->
-    <!-- <script src="./asset/js/owl.carousel.min.js"></script> -->
-    <!-- <script src="./asset/js/morphext.min.js"></script> -->
-    <!-- <script src="./asset/js/particles.min.js"></script> -->
     <script src="./asset/js/parallaxie.min.js"></script>
     <script src="./asset/js/jquery.fancybox.min.js"></script>
     <script src="./asset/js/wow.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- <script src="./asset/rs-plugin/js/jquery.themepunch.tools.min.js"></script> -->
-    <!-- <script src="./asset/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> -->
+    <script src="https://cdn.propstory.com/assets/vendor/intlTelInput/js/intlTelInput.js"></script>
+    <script src="https://cdn.propstory.com/assets/js/v1/common.js"></script>
+      <script src="https://cdn.propstory.com/assets/js/v1/form_submit.js"></script>  
+    <script src="https://cdn.propstory.com/assets/js/v1/template_customization.js"></script>
+  
+
 
     <!-- SLIDER REVOLUTION EXTENSIONS -->
     <!-- <script src="./asset/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
@@ -1585,6 +2005,38 @@ A pool that calms.
           $("#information_modal").modal("hide");
         });
       });
+
+      const input = document.querySelector("#phone");
+
+window.intlTelInput(input, {
+  initialCountry: "in",
+  autoPlaceholder: "off"
+});
     </script>
+
+    
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+      delay: 2000, // Change slide every 3 seconds
+      disableOnInteraction: false, // Autoplay continues after user interaction
+    },
+    loop: true, // Infinite loop
+  });
+</script>
+
+
+<script id="development_script">
+  var webhook_google =
+     "https://hook.eu1.make.com/5dc5uu76jugihcflbkljd4oeo4nb9d87";
+   var google_conversion_pixel = "AW-10998320222/lWLtCKqKj7AZEN6YtPwo";
+</script>
+
   </body>
 </html>
